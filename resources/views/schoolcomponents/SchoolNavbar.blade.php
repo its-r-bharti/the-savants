@@ -142,6 +142,7 @@
             </div> --}}
 
             <a href="/school" class="text-sm font-semibold leading-6 text-gray-900">Feature</a>
+            <a href="/schoolPrice" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
             <a href="/template" class="text-sm font-semibold leading-6 text-gray-900">Templates</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Demo</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>

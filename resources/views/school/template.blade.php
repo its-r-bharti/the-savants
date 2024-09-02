@@ -8,7 +8,7 @@
 
 <body>
     <div class="bg-white">
-        @include('components.SchoolNavbar')
+        @include('schoolcomponents.SchoolNavbar')
 <br>
 <br>
 <div class="bg-white-900">

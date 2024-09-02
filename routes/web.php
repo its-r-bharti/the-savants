@@ -18,6 +18,9 @@ Route::get('/school', function () {
 Route::get('/template', function () {
     return view('school.template');
 });
+Route::get('/schoolPrice', function () {
+    return view('school.pricing');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

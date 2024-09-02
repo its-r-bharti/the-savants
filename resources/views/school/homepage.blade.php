@@ -8,7 +8,7 @@
 
 <body>
     <div class="bg-white">
-        @include('components.SchoolNavbar')
+        @include('schoolcomponents.SchoolNavbar')
 
 
         <div class="relative" x-data="{ state: false }">
