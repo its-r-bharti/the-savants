@@ -10,7 +10,7 @@
     <div class="bg-white">
         @include('components.navbar')
         @include('components.hero2')
-        @include('components.herosection')
+        {{-- @include('components.herosection') --}}
         @include('components.function')
         @include('components.testimonial')
         @include('components.stats')

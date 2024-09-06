@@ -8,7 +8,7 @@
 
 <body>
     <div class="bg-white">
-        @include('schoolcomponents.SchoolNavbar')
+        @include('bcomponents.BussinessNavbar')
 
 
         <div class="relative" x-data="{ state: false }">
@@ -231,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            @include('schoolcomponents.sidebar')
+            @include('bcomponents.sidebar')
         </section>
         
 
@@ -239,6 +239,8 @@
 
         
     </div>
+
+    {{-- @include('businesscomponents.testimonials') --}}
 
     @include('components.footer')
 

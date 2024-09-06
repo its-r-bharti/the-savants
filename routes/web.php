@@ -22,6 +22,17 @@ Route::get('/schoolPrice', function () {
     return view('school.pricing');
 });
 
+Route::get('/office', function () {
+    return view('business.homepage');
+});
+
+Route::get('/btemplate', function () {
+    return view('business.template');
+});
+Route::get('/bPrice', function () {
+    return view('business.pricing');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -27,7 +27,7 @@
                     <div class="flex items-end mt-5">
                         <div class="flex items-start">
                             <span class="text-xl font-medium text-black"> ₹</span>
-                            <p id="personal-price" class="text-6xl font-medium tracking-tight" data-monthly="2000" data-yearly="10000">2000</p>
+                            <p id="personal-price" class="text-6xl font-medium tracking-tight" data-monthly="2000" data-yearly="20000">2000</p>
                         </div>
                         <span class="ml-0.5 text-lg text-gray-600"> / <span id="personal-billing-period">month</span> </span>
                     </div>

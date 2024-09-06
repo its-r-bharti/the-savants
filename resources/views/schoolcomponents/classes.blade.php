@@ -1,8 +1,8 @@
 <div id="classes" class="p-4 sm:ml-64">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-        <div class="grid grid-cols-3 gap-4 mb-4">
-            <div class="flex items-center justify-center h-24 rounded-3xl bg-gray-50 dark:bg-gray-800">
-                <h2 class="text-4xl text-gray-800 font-semibold md:text-4xl">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+            <div class="flex items-center justify-center h-10 md:h-24 rounded-3xl bg-gray-50 dark:bg-gray-800">
+                <h2 class="text-xl font-semibold md:text-4xl">
                     <span class="text-red-600">Classes</span>
                 </h2> <br>
             </div>

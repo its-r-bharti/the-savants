@@ -8,7 +8,7 @@
 
 <body>
     <div class="bg-white">
-        @include('schoolcomponents.SchoolNavbar')
+        @include('bcomponents.BussinessNavbar')
         <br>
         <br>
         <div class="bg-white-900">
@@ -48,17 +48,17 @@
             
         </div>
 
-        @include('schoolcomponents.price')
+        @include('bcomponents.price')
 
        
-        @include('schoolcomponents.partners')
+        @include('bcomponents.partners')
         
 
 
 
         
         <!-- testimonials -->
-        @include('schoolcomponents.testimonials')
+        @include('bcomponents.testimonials')
        
 
         
