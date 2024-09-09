@@ -2,7 +2,7 @@
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How do we create success</h2>
-            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">At The Savants, we create success by turning your ideas into a thriving online presence. Our streamlined approach ensures that you have everything needed to succeed in today’s digital world — from concept to launch, we’re with you every step of the way.</p>
         </div>
 
         <ul class="max-w-md mx-auto mt-16 space-y-12">
@@ -16,7 +16,7 @@
                 </div>
                 <div class="ml-6">
                     <h3 class="text-lg font-semibold text-black">Create a free account</h3>
-                    <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p class="mt-4 text-base text-gray-600">Starting your journey with us is simple. Sign up for a free account and access our powerful tools designed to help you manage your business efficiently. Whether you're looking to manage school data or streamline office operations, we provide the right solutions tailored to your needs.</p>
                 </div>
             </li>
 
@@ -30,7 +30,7 @@
                 </div>
                 <div class="ml-6">
                     <h3 class="text-lg font-semibold text-black">Build your website</h3>
-                    <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p class="mt-4 text-base text-gray-600">Your website is the face of your online business, and we help you build it to perfection. Our team works closely with you to create a professional, user-friendly website that showcases your brand, whether you're developing a school management system, an office management platform, or any other digital solution.</p>
                 </div>
             </li>
 
@@ -42,7 +42,7 @@
                 </div>
                 <div class="ml-6">
                     <h3 class="text-lg font-semibold text-black">Release & launch</h3>
-                    <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p class="mt-4 text-base text-gray-600">Once everything is in place, it’s time to launch. From thorough testing to ensuring a seamless user experience, we help you release your website or management system confidently. With The Savants by your side, your digital venture is ready to thrive and make an impact.</p>
                 </div>
             </li>
         </ul>

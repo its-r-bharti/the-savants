@@ -1,9 +1,9 @@
-<section class="py-10 bg-gray-50 sm:py-16 lg:py-32">
+<section class="py-4 bg-gray-50 sm:py-4 lg:py-4">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-xl mx-auto text-center">
             
             <h2 class="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">The Savants helps you to Start your Business online</h2>
-            <p class="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <p class="mt-4 text-base leading-relaxed text-gray-600">At The Savants, we transform entrepreneurial visions into thriving online businesses.</p>
         </div>
     </div>
 </section>
@@ -13,7 +13,7 @@
 
 
 
-<section class="py-10 bg-white sm:py-16 lg:py-4">
+<section class="py-4 bg-white sm:py-4 lg:py-4">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
             <div>
