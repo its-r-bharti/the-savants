@@ -29,10 +29,10 @@
                                     </div>
                                 </h1>
             
-                                <p class="mt-8 text-base text-black sm:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
+                                <p class="mt-8 text-base text-black sm:text-xl">We offer competitive rates and pricing plans to help you find one that fits the needs and budget of your school with our  school management system.</p>
             
                                 <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                                    <a href="#" title="" class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 rounded-3xl bg-orange-500 hover:bg-orange-600 focus:bg-orange-600" role="button"> Start exploring </a>
+                                    <a href="/school" title="" class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 rounded-3xl bg-orange-500 hover:bg-orange-600 focus:bg-orange-600" role="button"> Start exploring </a>
             
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
         <!-- testimonials -->
         @include('schoolcomponents.testimonials')
        
-
+        @include('schoolcomponents.subscriptionform')
         
 
 

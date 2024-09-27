@@ -145,10 +145,55 @@
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
-                    aria-hidden="true">&rarr;</span></a>
+        <!-- Display admin name or login button -->
+<div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    @auth
+        <!-- When user is signed in, show their name -->
+        <div class="flex items-center space-x-3">
+            <x-dropdown align="right" width="48">
+                <x-slot name="trigger">
+                    <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                        <div>Hello, {{ Auth::user()->name }}</div>
+
+                        <div class="ms-1">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                </x-slot>
+
+                <x-slot name="content">
+                    <x-dropdown-link :href="route('profile.edit')">
+                        {{ __('Profile') }}
+                    </x-dropdown-link>
+
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Log Out') }}
+                        </x-dropdown-link>
+                    </form>
+                </x-slot>
+            </x-dropdown>
+            
         </div>
+    @else
+        <!-- Show Log in button if user is not signed in -->
+        <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+                aria-hidden="true">&rarr;</span></a>
+    @endauth
+</div>
+
+{{-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+            aria-hidden="true">&rarr;</span></a>
+</div> --}}
+
     </nav>
 
     <!-- Mobile menu -->
@@ -209,11 +254,60 @@
                         <a href="#"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
                     </div>
+                    {{-- <div class="py-6">
+                         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
+                            <div class="px-4">
+                                <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ Auth::user()->name }}</div>
+                                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                            </div>
+                
+                            <div class="mt-3 space-y-1">
+                                <x-responsive-nav-link :href="route('profile.edit')">
+                                    {{ __('Profile') }}
+                                </x-responsive-nav-link>
+                
+                                <!-- Authentication -->
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                
+                                    <x-responsive-nav-link :href="route('logout')"
+                                            onclick="event.preventDefault();
+                                                        this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-responsive-nav-link>
+                                </form>
+                            </div>
+                        </div> 
+                    </div> --}}
+
                     <div class="py-6">
-                        <a href="{{ route('login') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                            in</a>
+                        @auth
+                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                {{ Auth::user()->name }}
+                            </a>
+                            <div class="mt-3 space-y-1">
+                                <x-responsive-nav-link :href="route('profile.edit')">
+                                    {{ __('Profile') }}
+                                </x-responsive-nav-link>
+                
+                                <!-- Authentication -->
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                
+                                    <x-responsive-nav-link :href="route('logout')"
+                                            onclick="event.preventDefault();
+                                                        this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-responsive-nav-link>
+                                </form>
+                            </div>
+                        @else
+                            <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                Log in
+                            </a>
+                        @endauth
                     </div>
+                    
                 </div>
             </div>
         </div>

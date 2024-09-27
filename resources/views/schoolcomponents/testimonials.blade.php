@@ -18,37 +18,37 @@
     document.addEventListener('DOMContentLoaded', function () {
 const testimonials = [
 {
-    avatar: 'https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg',
-    name: 'Martin Escobar',
-    title: 'Founder of Meta',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.'
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    name: 'John Doe',
+    title: 'Principal at Greenwood High School',
+    quote: 'The Savants School Management System has completely transformed how we manage our school operations. From attendance tracking to seamless communication with parents, everything is organized and efficient. We’ve saved so much time and effort, and our staff is more productive than ever!'
 },
 {
-    avatar: 'https://randomuser.me/api/portraits/women/79.jpg',
-    name: 'Angela Stian',
-    title: 'Product Designer',
-    quote: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout, that the point of using Lorem Ipsum.'
+    avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
+    name: 'Emily Roberts',
+    title: 'Administrator at Oakwood Academy',
+    quote: 'We’ve tried various management tools, but The Savants truly stands out. The user interface is intuitive, and the customer support is excellent. Our teachers love the real-time gradebook updates, and parents appreciate the easy access to student progress. Highly recommended!'
 },
 {
-    avatar: 'https://randomuser.me/api/portraits/men/86.jpg',
-    name: 'Karim Ahmed',
-    title: 'DevOp Engineer',
-    quote: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.'
+    avatar: 'https://randomuser.me/api/portraits/men/44.jpg',
+    name: 'Michael Thompson',
+    title: 'Head of IT at Riverdale School',
+    quote: 'The Savants has given us complete control over our school’s data. The customizable reports and automated fee management have made administrative tasks a breeze. It’s by far the best solution we’ve implemented for our school!'
 },
 {
-    avatar: 'https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg',
-    name: 'Martin Escobar',
-    title: 'Founder of Meta',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.'
+    avatar: 'https://randomuser.me/api/portraits/women/55.jpg',
+    name: 'Sarah Lee',
+    title: 'Teacher at Maplewood Elementary',
+    quote: 'As a teacher, I love how easy it is to update grades and communicate with parents through The Savants platform. The interface is clean and user-friendly, and it has made managing my classes so much simpler.'
 },
 {
-    avatar: 'https://randomuser.me/api/portraits/women/79.jpg',
-    name: 'Angela Stian',
-    title: 'Product Designer',
-    quote: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout, that the point of using Lorem Ipsum.'
+    avatar: 'https://randomuser.me/api/portraits/men/78.jpg',
+    name: 'David Harris',
+    title: 'Parent at Horizon High School',
+    quote: 'The Savants system has made it so easy for me to stay updated on my child’s progress. I can check attendance, grades, and even communicate with teachers directly. It’s an amazing tool for parents who want to stay involved in their child’s education.'
 }
-
 ];
+
 
 let currentTestimonial = 0;
 const testimonialContainer = document.getElementById('testimonial-container');

@@ -18,6 +18,8 @@ Route::get('/school', function () {
 Route::get('/template', function () {
     return view('school.template');
 });
+
+
 Route::get('/schoolPrice', function () {
     return view('school.pricing');
 });
@@ -29,6 +31,8 @@ Route::get('/office', function () {
 Route::get('/btemplate', function () {
     return view('business.template');
 });
+
+
 Route::get('/bPrice', function () {
     return view('business.pricing');
 });

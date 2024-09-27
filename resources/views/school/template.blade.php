@@ -40,7 +40,7 @@
                     <div class="flex justify-between items-center mt-4">
                         <span class="text-green-500 font-bold">$49</span>
                         <span class="text-gray-400">$0</span>
-                        <button class="text-red-500 font-bold"><a  href="http://" target="_blank" rel="">Full Preview</a></button>
+                        <button class="text-red-500 font-bold"><a  href="https://t-he-savants.github.io/Stemplate1/" target="_blank" rel="">Full Preview</a></button>
                     </div>
                 </div>
             </div>

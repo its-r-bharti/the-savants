@@ -43,7 +43,7 @@
             <!-- Dots will be dynamically inserted here -->
         </div>
 
-        <p class="mt-10 text-base text-center text-gray-500 md:mt-20">and, 1000+ more companies</p>
+        <p class="mt-10 text-base text-center text-gray-500 md:mt-20">and, 100+ more School</p>
     </div>
 </section>
 

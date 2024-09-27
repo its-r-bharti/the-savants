@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
 
     @include('components.header')
-</head>
+
 
 <body>
     <div class="bg-white">
@@ -252,4 +249,3 @@
 
 </body>
 
-</html>

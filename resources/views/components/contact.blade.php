@@ -29,7 +29,7 @@
                     />
                   </svg>
                 </div>
-                <p>thesavants12345@gmail.com</p>
+                <p>contact@thesavants.in</p>
               </li>
               <li class="flex items-center gap-x-3">
                 <div class="flex-none text-gray-400">

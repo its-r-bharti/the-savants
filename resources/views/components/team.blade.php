@@ -12,18 +12,12 @@
                 <p class="mt-1 text-base leading-tight text-gray-600">Founder and CEO</p>
             </div>
 
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-2.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">....</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">CTO</p>
-            </div>
+        
 
             <div class="hidden lg:block"></div>
 
             <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-3.jpg" alt="" />
+                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="{{ asset('img/user.jpg')  }}" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">Saurbh Kumar</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">CMO</p>
             </div>
@@ -31,7 +25,7 @@
             <div class="hidden lg:block"></div>
 
             <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-4.jpg" alt="" />
+                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="{{ asset('img/user.jpg')  }}" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">Aman Kumar</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">Content Writor</p>
             </div>
@@ -47,7 +41,7 @@
             <div class="hidden lg:block"></div>
 
             <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-6.jpg" alt="" />
+                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="{{ asset('img/user.jpg')  }}" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">....</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">Customer Success</p>
             </div>
@@ -55,7 +49,7 @@
             <div class="hidden lg:block"></div>
 
             <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-7.jpg" alt="" />
+                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="{{ asset('img/user.jpg')  }}" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">....</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">Front-end Developer</p>
             </div>
@@ -71,7 +65,7 @@
             <div class="hidden lg:block"></div>
 
             <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-9.jpg" alt="" />
+                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="{{ asset('img/user.jpg')  }}" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">....</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">UI Designer</p>
             </div>
