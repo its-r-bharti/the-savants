@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -9,6 +10,9 @@ Route::get('/', function () {
 
 Route::get('/feature', function () {
     return view('home.feature');
+});
+Route::get('/about', function () {
+    return view('home.about');
 });
 
 Route::get('/school', function () {
@@ -46,5 +50,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
+Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
+
+
 
 require __DIR__.'/auth.php';

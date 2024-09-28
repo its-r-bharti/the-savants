@@ -143,7 +143,7 @@
 
             <a href="/feature" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+            <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
         </div>
         <!-- Display admin name or login button -->
 <div class="hidden lg:flex lg:flex-1 lg:justify-end">

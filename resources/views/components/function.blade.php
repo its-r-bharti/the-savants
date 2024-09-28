@@ -187,18 +187,30 @@
                         </div>
                         <p class="mb-4">Bring your business online with a professional website. From simple to advanced solutions, we manage it all.</p>
                         <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <!-- Tick Icon -->
-                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                                Responsive design, up to 5 pages, regular updates
-                            </li>
+                            
                             <li class="flex items-center">
                                 <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
                                 </svg>
                                 E-commerce integration, SEO optimization, dynamic content
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                                Advanced security protocols, SSL certificates, and GDPR compliance
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                                Performance optimization, lightning-fast loading times
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                                Analytics integration, real-time data tracking, and reporting
                             </li>
                         </ul>
                     </div>
@@ -207,6 +219,7 @@
                         <a href="#" class="inline-block bg-white text-green-600 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition">Explore Now</a>
                     </div>
                 </div>
+                
 
                 <!-- School Management System -->
                 <div class="bg-gradient-to-r from-blue-500 to-gray-900 shadow-lg rounded-lg p-6 text-white flex flex-col justify-between">

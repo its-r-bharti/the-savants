@@ -78,44 +78,115 @@
           </div>
         </div>
         <div class="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
-          <form class="space-y-5">
-            <div>
-              <label class="font-medium"> Full name </label>
-              <input
-                type="text"
-                required
-                class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-              />
-            </div>
-            <div>
-              <label class="font-medium"> Email </label>
-              <input
-                type="email"
-                required
-                class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-              />
-            </div>
-            <div>
-              <label class="font-medium"> Company </label>
-              <input
-                type="text"
-                required
-                class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-              />
-            </div>
-            <div>
-              <label class="font-medium"> Message </label>
-              <textarea
-                required
-                class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-              ></textarea>
-            </div>
-            <button
-              class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-            >
-              Submit
-            </button>
-          </form>
+
+          @if(Session::has('success'))
+    <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">
+        <p>{{ Session::get('success') }}</p>
+    </div>
+@endif
+
+{{-- <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5">
+    @csrf
+    <div>
+        <label class="font-medium">Full name</label>
+        <input
+            type="text"
+            name="name"
+            required
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+        />
+        @error('name')
+            <span class="text-red-500 text-sm">{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        <label class="font-medium">Email</label>
+        <input
+            type="email"
+            name="email"
+            required
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+        />
+        @error('email')
+            <span class="text-red-500 text-sm">{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        <label class="font-medium">Phone Number</label>
+        <input
+            type="tel"
+            name="phone"
+            required
+            pattern="[0-9]{10}"
+            placeholder="9056425289"
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+        />
+        @error('phone')
+            <span class="text-red-500 text-sm">{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        <label class="font-medium">Company/School  Name</label>
+        <input
+            type="text"
+            name="company"
+            required
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+        />
+        @error('company')
+            <span class="text-red-500 text-sm">{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        <label class="font-medium">Message</label>
+        <textarea
+            name="message"
+            required
+            class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+        ></textarea>
+        @error('message')
+            <span class="text-red-500 text-sm">{{ $message }}</span>
+        @enderror
+    </div>
+    <button
+        type="submit"
+        class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+    >
+        Submit
+    </button>
+</form> --}}
+
+
+
+<form action="{{ route('contact.submit') }}" method="POST" class="space-y-5">
+  @csrf
+  <div>
+      <label class="font-medium">Full name</label>
+      <input type="text" name="name" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+  </div>
+  <div>
+      <label class="font-medium">Email</label>
+      <input type="email" name="email" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+  </div>
+  <div>
+      <label class="font-medium">Phone</label>
+      <input type="text" name="phone" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+  </div>
+  <div>
+      <label class="font-medium">Company</label>
+      <input type="text" name="company" required class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+  </div>
+  <div>
+      <label class="font-medium">Message</label>
+      <textarea name="message" required class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
+  </div>
+  <button class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
+      Submit
+  </button>
+</form>
+
+
+
         </div>
       </div>
     </div>
