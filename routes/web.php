@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PricingPlanController;
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -14,6 +15,9 @@ Route::get('/feature', function () {
 Route::get('/about', function () {
     return view('home.about');
 });
+
+
+//school
 
 Route::get('/school', function () {
     return view('school.homepage');
@@ -28,6 +32,9 @@ Route::get('/schoolPrice', function () {
     return view('school.pricing');
 });
 
+
+//business
+
 Route::get('/office', function () {
     return view('business.homepage');
 });
@@ -40,6 +47,39 @@ Route::get('/btemplate', function () {
 Route::get('/bPrice', function () {
     return view('business.pricing');
 });
+
+
+//webapp
+
+Route::get('/webapp', function () {
+    return view('webapp.homepage');
+});
+
+Route::get('/web', function () {
+    return view('webapp.web');
+});
+
+Route::get('/app', function () {
+    return view('webapp.app');
+});
+
+Route::get('/maintainance', function () {
+    return view('webapp.maintainance');
+});
+
+
+
+//shop
+
+Route::get('/shop', function () {
+    return view('shop.homepage');
+});
+
+//hardware
+Route::get('/hardware', function () {
+    return view('hardware.homepage');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -56,5 +96,8 @@ Route::middleware('auth')->group(function () {
 Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
 
 
+
+Route::post('/send-standard-plan', [PricingPlanController::class, 'sendStandardPlan']);
+Route::post('/send-professional-plan', [PricingPlanController::class, 'sendProfessionalPlan']);
 
 require __DIR__.'/auth.php';

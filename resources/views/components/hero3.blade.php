@@ -7,7 +7,7 @@
                         <div>
                             <h1 id="dynamic-text" class="text-4xl font-bold text-black sm:text-6xl xl:text-7xl zoom-text">Grow Your <br> <span id="dynamic-word" class="inline-block">Enterprise</span> </h1>
                             <p class="mt-6 text-base text-black sm:text-xl fade-in-2">At The Savants, we specialize in tailored services to help businesses, schools, and enterprises thrive in the digital world. Discover how we can help you!</p>
-                            <a href="/school" title="" class="inline-flex items-center px-6 py-5 text-base font-semibold text-black transition-all duration-200 bg-green-300 mt-9 hover:bg-green-400 focus:bg-green-400 fade-in-3" role="button"> Explore Our Product </a>
+                            <a href="/webapp" title="" class="inline-flex items-center px-6 py-5 text-base font-semibold text-black transition-all duration-200 bg-green-300 mt-9 hover:bg-green-400 focus:bg-green-400 fade-in-3" role="button"> Explore Our Product </a>
                         </div>
 
                         <div class="mt-8 border-t-2 border-black lg:mt-auto sm:mt-14">

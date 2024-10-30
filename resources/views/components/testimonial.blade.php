@@ -2,17 +2,21 @@
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">What our customers say</h2>
-            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">At The Savants, our customers are at the heart of everything we do. We take pride in delivering exceptional services and solutions, and the feedback we receive is a testament to our commitment to excellence.</p>
+            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">At The Savants, our customers are at
+                the heart of everything we do. We take pride in delivering exceptional services and solutions, and the
+                feedback we receive is a testament to our commitment to excellence.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
             <div class="overflow-hidden bg-white rounded-md">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
-                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg" alt="" />
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                            src="https://sansaniexpressnews.com/assets/logo.png"
+                            alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
-                            <p class="text-base font-semibold text-black truncate">saurbh</p>
-                            <p class="text-sm text-gray-600 truncate">@saurbh</p>
+                            <p class="text-base font-semibold text-black truncate">Team</p>
+                            <p class="text-sm text-gray-600 truncate">– Sansani Express News</p>
                         </div>
                         {{-- <a href="#" title="" class="inline-block text-sky-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -24,7 +28,9 @@
                     </div>
                     <blockquote class="mt-5">
                         <p class="text-base text-gray-800">
-                            “The Savants helped us transition our business online seamlessly. Their expertise in creating a robust digital presence was instrumental in our growth.”
+                            "The Savants provided us with an excellent software solution to manage our news online
+                            seamlessly. Their system is efficient, easy to use, and their support is always reliable.
+                            Highly recommended!"
                             {{-- <span class="block text-sky-500">#another</span> --}}
                         </p>
                     </blockquote>
@@ -34,17 +40,20 @@
             <div class="overflow-hidden bg-white rounded-md">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
-                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg" alt="" />
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                            src="{{ asset('img/aman.jpg')  }}"
+                            alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
                             <p class="text-base font-semibold text-black truncate">Aman</p>
-                            <p class="text-sm text-gray-600 truncate">@aman</p>
+                            <p class="text-sm text-gray-600 truncate">–Cubicuss</p>
                         </div>
-                        
+
                     </div>
                     <blockquote class="mt-5">
                         <p class="text-base text-gray-800">
-                            “The team’s dedication to our project was evident from start to finish. Their tailored solutions and proactive approach exceeded our expectations.”
-                       
+                            “The team’s dedication to our project was evident from start to finish. Their tailored
+                            solutions and proactive approach exceeded our expectations.”
+
                         </p>
                     </blockquote>
                 </div>
@@ -53,17 +62,20 @@
             <div class="overflow-hidden bg-white rounded-md">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
-                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-3.jpg" alt="" />
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                            src="{{ asset('img/profile.png')  }}"
+                            alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
                             <p class="text-base font-semibold text-black truncate">Rahul singh</p>
-                            <p class="text-sm text-gray-600 truncate">@rahul</p>
+                            <p class="text-sm text-gray-600 truncate">–Ranawat Tech</p>
                         </div>
-                        
+
                     </div>
                     <blockquote class="mt-5">
                         <p class="text-base text-gray-800">
-                            “Working with The Savants has been a game-changer for us. Their innovative strategies and attention to detail have significantly improved our online visibility.”
-                          
+                            “Working with The Savants has been a game-changer for us. Their innovative strategies and
+                            attention to detail have significantly improved our online visibility.”
+
                         </p>
                     </blockquote>
                 </div>
@@ -72,10 +84,12 @@
             <div class="overflow-hidden bg-white rounded-md">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
-                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-6.jpg" alt="" />
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                            src="{{ asset('img/woman.png')  }}"
+                            alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
                             <p class="text-base font-semibold text-black truncate">Pushpanjali Sharma</p>
-                            <p class="text-sm text-gray-600 truncate">@Pushpanjali</p>
+                            <p class="text-sm text-gray-600 truncate">–Legalpalz</p>
                         </div>
                         <a href="#" title="" class="inline-block text-sky-500">
                             {{-- <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -87,14 +101,15 @@
                     </div>
                     <blockquote class="mt-5">
                         <p class="text-base text-gray-800">
-                            “We’re incredibly satisfied with the results. The Savants’ team was responsive, professional, and truly invested in our success.”
-                            
+                            “We’re incredibly satisfied with the results. The Savants’ team was responsive,
+                            professional, and truly invested in our success.”
+
                         </p>
                     </blockquote>
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 </section>

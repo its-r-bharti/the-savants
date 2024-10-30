@@ -84,11 +84,15 @@
                                     <h1 class="text-4xl text-gray-800 font-extrabold sm:text-5xl">
                                       School Management System
                                     </h1>
-                                    <p>
-                                      The Savants offers a suite of advanced educational management solutions including AI-powered Student and Faculty Apps, Student and HRMS Management Systems, Academic Management, Hostel, Transport, LMS App, and Library Management.
-                                    </p>
+                                    <p class="text-xl text-blue-900 font-extrabold sm:text-xl">
+                                        Efficient, Integrated, and User-Friendly Solutions for Indian Schools
+                                    </p>    
+                                    <br>
+                                    
+                                    <p class="text-sm text-gray-900">The Savants’ School Management System is a comprehensive digital solution that helps schools across India streamline their operations, improve communication, and enhance the overall academic experience. With AI-powered tools and an easy-to-use interface, we aim to revolutionize school management for institutions of all sizes.</p>                              
+                                
                                     <div class="flex items-center gap-x-3 sm:text-sm">
-                                        <a href="javascript:void(0)"
+                                        <a href="https://school.thesavants.in/"
                                             class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
                                             Request a Demo
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -152,12 +156,12 @@
         <section class="py-10 bg-white sm:py-16 lg:py-24">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
+                    <!-- Left Section: Image and Quote -->
                     <div class="relative lg:mb-12">
                         <img class="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4"
-                            src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg"
-                            alt="" />
+                            src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg" alt="" />
                         <div class="pl-12 pr-6">
-                            <img class="relative"
+                            <img class="relative rounded-lg shadow-lg"
                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/girl-working-on-laptop.jpg"
                                 alt="" />
                         </div>
@@ -167,25 +171,62 @@
                                     <div class="flex items-start">
                                         <p class="text-3xl sm:text-4xl">👋</p>
                                         <blockquote class="ml-5">
-                                            <p class="text-sm font-medium text-white sm:text-lg">“Our  school management software manages everything starting from admission to attendance and exams to result cards & certification.”
-                                            </p>
+                                            <p class="text-sm font-medium text-white sm:text-lg">“Our school management software manages everything starting from admission to attendance and exams to result cards & certification.”</p>
                                         </blockquote>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+            
+                    <!-- Right Section: Title and Points -->
                     <div class="2xl:pl-16">
-                        <h2
-                            class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-                            Comprehensive ERP software For School Management! </h2>
-                        <p class="text-xl leading-relaxed text-gray-900 mt-9">Education ERP (Enterprise Resource Planning) software is a comprehensive solution designed to streamline and automate various administrative and academic processes within educational institutions. It integrates multiple functions into a centralized system, enhancing efficiency and communication.</p>
+                        <h2 class="text-2xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl lg:leading-tight">
+                            Why Choose The Savants School Management System?
+                        </h2>
                         
+                        
+                        <!-- Feature List -->
+                        <ul class="mt-8 space-y-6 text-gray-800">
+                            <li class="flex space-x-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-lg font-medium">End-to-End Automation: Manage everything from admissions to exam results in one platform.</span>
+                            </li>
+            
+                            <li class="flex space-x-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-lg font-medium">Customizable for Indian Education: Tailored solutions that understand CBSE, ICSE, and state board requirements.</span>
+                            </li>
+            
+                            <li class="flex space-x-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-lg font-medium">Seamless Parent-Teacher Communication: Improve transparency and parent involvement through automated notifications and apps.</span>
+                            </li>
+            
+                            <li class="flex space-x-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-lg font-medium">100% Data Security and Backup: Protect student and staff information with our advanced encryption and regular backups.</span>
+                            </li>
+            
+                            <li class="flex space-x-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-lg font-medium">Affordable Pricing: Plans that fit the needs and budget of Indian schools.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
 
             @include('schoolcomponents.schoolfeature')
             @include('schoolcomponents.sidebar')

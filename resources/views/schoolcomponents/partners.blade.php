@@ -1,7 +1,10 @@
 <section class="py-4 bg-white sm:py-4 lg:py-4">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-800 sm:text-4xl sm:leading-tight">Trusted by world class companies, design teams & popular designers</h2>
+            <h2 class="text-2xl font-bold text-gray-800 sm:text-4xl sm:leading-tight">Trusted by over 100 Schools in India  </h2>
+            <br>
+            <h2 class="text-xl font-bold text-gray-800 sm:text-sm sm:leading-tight">Our solutions have been tried and tested by top schools, delivering excellent results and increasing productivity. </h2>
+
         </div>
 
         <div class="grid items-center max-w-4xl grid-cols-2 mx-auto mt-12 md:mt-20 md:grid-cols-4 gap-x-10 gap-y-16" id="logo-container">

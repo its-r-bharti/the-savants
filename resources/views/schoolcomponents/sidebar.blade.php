@@ -45,14 +45,7 @@
                     <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
                 </a>
             </li>
-            <li>
-                <a href="#classes"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-
-                    <span class="flex-1 ms-3 whitespace-nowrap">Classes</span>
-                </a>
-            </li>
-           
+            
             <li>
                 <a href="#hostels"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -61,10 +54,10 @@
                 </a>
             </li>
             <li>
-                <a href="#section"
+                <a href="#transport"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
 
-                    <span class="flex-1 ms-3 whitespace-nowrap">Sections</span>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Transport</span>
                 </a>
             </li>
             <li>
@@ -102,9 +95,9 @@
 @include('schoolcomponents.payments')
 @include('schoolcomponents.students')
 @include('schoolcomponents.users')
-@include('schoolcomponents.classes')
+
 @include('schoolcomponents.hostel')
-@include('schoolcomponents.section')
+@include('schoolcomponents.transport')
 @include('schoolcomponents.subject')
 @include('schoolcomponents.exam')
 @include('schoolcomponents.setting')

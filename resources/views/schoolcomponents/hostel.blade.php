@@ -18,12 +18,11 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="1.5"
-                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                                />
+                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/>
                             </svg>
                         </div>
-                        <h3 class="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-                        <p class="mt-4 text-sm text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <h3 class="mt-8 text-lg font-semibold text-black">Create and Manage Hostels</h3>
+                        <p class="mt-4 text-sm text-gray-600">Easily create and manage multiple hostel accommodations within the school system. Assign rooms, track availability, and manage student allocations seamlessly.</p>
                     </div>
         
                     <div>
@@ -32,17 +31,31 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <h3 class="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
-                        <p class="mt-4 text-sm text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <h3 class="mt-8 text-lg font-semibold text-black">Record Keeping</h3>
+                        <p class="mt-4 text-sm text-gray-600">Keep detailed records of hostel occupants, fees, and available rooms, ensuring accurate, up-to-date information at all times.</p>
                     </div>
-        
-                    
-        
+
+                    <div>
+                        <div class="flex items-center justify-center w-20 h-20 mx-auto bg-orange-100 rounded-full">
+                            <svg class="text-orange-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black">Easy to Handle</h3>
+                        <p class="mt-4 text-sm text-gray-600">Simplify hostel management tasks with an intuitive interface that makes it easy for administrators to handle room assignments and check-ins efficiently.</p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-center w-20 h-20 mx-auto bg-orange-100 rounded-full">
+                            <svg class="text-orange-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-8 text-lg font-semibold text-black">High Security</h3>
+                        <p class="mt-4 text-sm text-gray-600">Ensure high-level security for hostel residents with secure access systems, attendance tracking, and regular updates on hostel status.</p>
+                    </div>
                 </div>
             </div>
         </section>
-      
-        
-       
     </div>
- </div>
+</div>

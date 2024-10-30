@@ -17,9 +17,9 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
+        <div class="hidden lg:flex lg:gap-x-12 ">
             <div class="relative">
-                <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                <button type="button" class="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900"
                     aria-expanded="false" id="product-menu-button">
                     Product
                     <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
@@ -34,6 +34,26 @@
                 <div class="absolute left-0 z-10 mt-3 hidden w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
                     id="product-menu">
                     <div class="p-4">
+
+                        <!-- website Management and development -->
+                        <div
+                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                            <div
+                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                                </svg>
+                            </div>
+                            <div class="flex-auto">
+                                <a href="/webapp" class="block font-semibold text-gray-900">
+                                    Web & App Service
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                <p class="mt-1 text-gray-600">Everything you need to build and grow any website and App—all in one place. </p>
+                            </div>
+                        </div>
                         <!-- School Management System -->
                         <div
                             class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
@@ -64,7 +84,9 @@
                                 <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                                        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
                                 </svg>
                             </div>
                             <div class="flex-auto">
@@ -75,6 +97,8 @@
                                 <p class="mt-1 text-gray-600">Get a better Management system for your Business</p>
                             </div>
                         </div>
+
+                        
 
                         <!-- Manage your shops -->
                         <div
@@ -88,12 +112,12 @@
                                 </svg>
                             </div>
                             <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-gray-900">
+                                <a href="shop" class="block font-semibold text-gray-900">
                                     Manage your shops
                                     <span class="absolute inset-0"></span>
                                 </a>
                                 <p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
-                                <p class="mt-1 text-gray-600 text-red-700">Coming soon</p>
+                                
                             </div>
                         </div>
 
@@ -109,7 +133,7 @@
                                 </svg>
                             </div>
                             <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-gray-900">
+                                <a href="hardware" class="block font-semibold text-gray-900">
                                     Hardware
                                     <span class="absolute inset-0"></span>
                                 </a>
@@ -141,9 +165,9 @@
                 </div>
             </div>
 
-            <a href="/feature" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-            <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+            <a href="/feature" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Features</a>
+            {{-- <a href="#" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Marketplace</a> --}}
+            <a href="/about" class="text-lg font-semibold hover:text-red-600 leading-6 text-gray-900">About Us</a>
         </div>
         <!-- Display admin name or login button -->
 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -184,7 +208,7 @@
         </div>
     @else
         <!-- Show Log in button if user is not signed in -->
-        <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+        <a href="{{ route('login') }}" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900">Log in <span
                 aria-hidden="true">&rarr;</span></a>
     @endauth
 </div>
@@ -231,6 +255,8 @@
                                 </svg>
                             </button>
                             <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                                <a href="/webapp"
+                                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Web & App Service</a>
                                 <a href="/school"
                                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Manage your School</a>
                                 <a href="/office"
@@ -249,10 +275,10 @@
                         </div>
                         <a href="/feature"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                        <a href="#"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                        <a href="#"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                        {{-- <a href="#"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a> --}}
+                        <a href="/about"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
                     </div>
                     {{-- <div class="py-6">
                          <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">

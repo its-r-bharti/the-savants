@@ -51,9 +51,9 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-3.jpg" alt="" />
+                        <img class="object-cover w-full h-full" src="{{ asset('img/blog3.png')  }}" alt="" />
                     </a>
-                    <span class="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-9"> Marketing </span>
+                    <span class="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-9">Business </span>
                     <p class="mt-6 text-xl font-semibold">
                         <a href="#" title="" class="text-black"> Manage from the best: manage your office with help of The Savants </a>
                     </p>
