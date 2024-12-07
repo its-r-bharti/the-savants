@@ -13,74 +13,295 @@
 
         <div class="bg-gray-100 ">
 
+
+
+            <!-- New About Us Section -->
+            <section class="relative pt-60 pb-20 bg-gradient-to-r from-green-200 via-blue-200 to-blue-300 text-white">
+                <!-- Background Decorative Circles -->
+                <div class="absolute top-0 left-0 transform -translate-x-1/2 translate-y-1/4">
+                    <svg width="400" height="400" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="opacity-30">
+                        <circle cx="50" cy="50" r="50" fill="#ffffff" />
+                    </svg>
+                </div>
+                <div class="absolute top-0 right-0 transform translate-x-1/2 translate-y-1/4">
+                    <svg width="400" height="400" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="opacity-30">
+                        <circle cx="50" cy="50" r="50" fill="#ffffff" />
+                    </svg>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
+                    <h2 class="text-5xl font-bold mb-6 tracking-wide animate-fade-in text-blue-900">We Deliver Your
+                        Thoughts <span class="text-red-700">- Long Term IT Partner</span></h2>
+                    <p class="text-2xl mb-10 leading-relaxed max-w-2xl text-gray-900 mx-auto">At The Savants, we’re
+                        dedicated to turning your ideas into reality with innovative IT solutions. Since our inception,
+                        we’ve been helping businesses like yours grow with custom web and mobile applications tailored
+                        just for you.
+                    </p>
+
+
+                </div>
+            </section>
+
+
+            <!-- Main Header Section -->
+
+
+            <!-- Why People Choose The Savants Section -->
+
+            <section class="bg-[#FCF8F1] bg-opacity-30 py-6 sm:py-10 lg:py-14">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+                        <div>
+                            <h3 class=" text-xl font-bold text-black sm:text-3xl xl:text-4xl">Why People Choose The
+                                Savants</h3>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">
+                                We provide complete solutions that integrate seamlessly with your
+                                existing systems, reducing the need for major changes. Unlike other firms that offer
+                                separate
+                                software solutions requiring you to manage different portals, we offer efficiency and
+                                simplicity.
+                            </p>
+
+
+                        </div>
+
+                        <div>
+                            <img class="w-full" src="{{ asset('img/why.png') }}" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {{-- Web Development & Designing --}}
+            <section class="bg-[#FCF8F1] bg-opacity-30 py-6 sm:py-10 lg:py-14">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+
+                        <div>
+                            <img class="w-full" src="{{ asset('img/website.png') }}" alt="" />
+                        </div>
+                        <div>
+                            <h3 class=" text-xl font-bold text-black sm:text-3xl xl:text-4xl">Web
+                                Development & Designing</h3>
+
+                            <div class="relative flex items-center justify-center my-6">
+                                <hr class="w-full border-gray-800 border-t-2">
+                                <div class="absolute bg-gray-900 px-4 py-2 rounded-full">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">
+                                With a professionally designed website, your visibility is worldwide! With a website,
+                                people looking for your services or products will be able to find you easily using their
+                                favorite search engine. Anyone who is serious about their products or services is better
+                                off having a website that better communicates what they are and what they have to offer.
+                            </p>
+                            <br>
+                            <ul class="space-y-4 list-disc list-inside md:list-outside md:pl-8 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Fully Responsive Design</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>SEO Optimized for Better Visibility</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Regular Updates and Maintenance</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Better Visibility</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Better Than Print Advertising</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>A Professional Touch</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            {{-- Software Development --}}
+            <section class="bg-[#FCF8F1] bg-opacity-30 py-6 sm:py-10 lg:py-14">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+
+
+                        <div>
+                            <h3 class=" text-xl font-bold text-black sm:text-3xl xl:text-4xl">Software Development</h3>
+
+                            <div class="relative flex items-center justify-center my-6">
+                                <hr class="w-full border-gray-800 border-t-2">
+                                <div class="absolute bg-gray-900 px-4 py-2 rounded-full">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">
+                                The changing dynamics of industry, business, and technology create opportunities for new
+                                software solutions. Accelerated market introduction provides an early mover advantage
+                                and avoids unnecessary expenses. Over the past 14 years, we have introduced more than
+                                150 new software solutions. By developing our capabilities, we deliver high-quality
+                                software faster and more cost- effectively using fewer resources, best-in-class tools,
+                                and standardized practices.
+                            </p>
+                            <br>
+                            <ul class="space-y-4 list-disc list-inside md:list-outside md:pl-8 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>New opportunities from changing landscapes.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Early mover advantage through accelerated introduction.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Over 150 new software solutions in 10 years.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Deliver high-quality software faster and cost-effectively.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Utilize best resources, practices, and tools.</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div>
+                            <img class="w-full" src="{{ asset('img/software.png') }}" alt="" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            {{-- Web-based IT Solutions --}}
+            <section class="bg-[#FCF8F1] bg-opacity-30 py-6 sm:py-10 lg:py-14">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+
+                        <div>
+                            <img class="w-full" src="{{ asset('img/web.png') }}" alt="" />
+                        </div>
+                        <div>
+                            <h3 class=" text-xl font-bold text-black sm:text-3xl xl:text-4xl">Web-based IT Solutions
+                            </h3>
+
+                            <div class="relative flex items-center justify-center my-6">
+                                <hr class="w-full border-gray-800 border-t-2">
+                                <div class="absolute bg-gray-900 px-4 py-2 rounded-full">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">Today the Internet is a
+                                huge marketplace that is potentially capable of covering the entire world's population.
+                                This is why electronic commerce i.e. e-commerce is so attractive to many traditional
+                                businesses.</p>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans"> In the virtual world, there is always an element of suspicion when sending or receiving
+                                sensitive information. A large percentage of Internet users leave a website when asked
+                                to provide any information about themselves.
+                            </p>
+                            <br>
+                            <ul class="space-y-4 list-disc list-inside md:list-outside md:pl-8 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Bulk Text Message</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Web Hosting</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Voice Message/OBD</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Payment Gateway</span>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            {{-- Innovative Electronics Solutions --}}
+            <section class="bg-[#FCF8F1] bg-opacity-30 py-6 sm:py-10 lg:py-14">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+            
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-black sm:text-3xl xl:text-4xl">Innovative Electronics Solutions</h3>
+            
+                            <div class="relative flex items-center justify-center my-6">
+                                <hr class="w-full border-gray-800 border-t-2">
+                                <div class="absolute bg-gray-900 px-4 py-2 rounded-full">
+                                    <i class="fas fa-bolt text-white"></i>
+                                </div>
+                            </div>
+            
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">The electronics industry drives innovation, connecting the world with smarter and more efficient technologies. From consumer devices to industrial systems, electronics shape the future.</p>
+                            <p class="mt-4 text-base text-black lg:mt-8 sm:text-lg font-sans">Modern electronic solutions offer high precision, reliability, and versatility across multiple domains, empowering businesses and individuals to achieve more with cutting-edge technology.</p>
+                            <br>
+                            <ul class="space-y-4 list-disc list-inside md:list-outside md:pl-8 text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Embedded Systems Design</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>IoT Integration</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>PCB Design and Prototyping</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span>Power Electronics Solutions</span>
+                                </li>
+                            </ul>
+            
+                        </div>
+                        <div>
+                            <img class="w-full" src="{{ asset('img/electronics.png') }}" alt="Electronics Solutions" />
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
             
 
-                <!-- New About Us Section -->
-                <section class="relative pt-60 pb-20 bg-gradient-to-r from-green-200 via-blue-200 to-blue-300 text-white">
-                  <!-- Background Decorative Circles -->
-                  <div class="absolute top-0 left-0 transform -translate-x-1/2 translate-y-1/4">
-                    <svg width="400" height="400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-30">
-                      <circle cx="50" cy="50" r="50" fill="#ffffff"/>
-                    </svg>
-                  </div>
-                  <div class="absolute top-0 right-0 transform translate-x-1/2 translate-y-1/4">
-                    <svg width="400" height="400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-30">
-                      <circle cx="50" cy="50" r="50" fill="#ffffff"/>
-                    </svg>
-                  </div>
-              
-                  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
-                    <h1 class="text-7xl font-bold mb-6 tracking-wide animate-fade-in text-blue-900">Welcome to <span class="text-red-700">The Savants</span></h1>
-                    <p class="text-2xl mb-10 leading-relaxed max-w-2xl text-gray-900 mx-auto">Where we craft cutting-edge digital solutions that empower businesses to succeed in today’s competitive market.</p>
-              
-                    {{-- <!-- New Icons and Grid Structure -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
-                      <div class="flex flex-col items-center">
-                        <img src="https://via.placeholder.com/100x100" alt="Custom Web Solutions Icon" class="w-24 h-24 mb-4 transform transition hover:scale-110">
-                        <h3 class="text-2xl font-semibold">Custom Web Solutions</h3>
-                        <p class="mt-3 text-lg">Tailored, dynamic websites that are scalable and powerful to help your business grow.</p>
-                      </div>
-                      <div class="flex flex-col items-center">
-                        <img src="https://via.placeholder.com/100x100" alt="School Management Icon" class="w-24 h-24 mb-4 transform transition hover:scale-110">
-                        <h3 class="text-2xl font-semibold">School Management Systems</h3>
-                        <p class="mt-3 text-lg">Comprehensive, intuitive management systems for schools, designed for seamless operations.</p>
-                      </div>
-                      <div class="flex flex-col items-center">
-                        <img src="https://via.placeholder.com/100x100" alt="Enterprise Solutions Icon" class="w-24 h-24 mb-4 transform transition hover:scale-110">
-                        <h3 class="text-2xl font-semibold">Enterprise Solutions</h3>
-                        <p class="mt-3 text-lg">Full-featured office management systems for boosting organizational efficiency.</p>
-                      </div>
-                    </div> --}}
-                  </div>
-                </section>
-              
-                <!-- Rest of the content (Our Journey) as before -->
-                <section class="relative py-16 bg-white text-gray-900">
-                  <div class="max-w-6xl mx-auto px-6 lg:px-12 text-center">
-                    <h2 class="text-4xl font-bold mb-8">Our Journey</h2>
-              
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                      <!-- Text Section -->
-                      <div>
-                        <p class="text-lg mb-6">
-                          The Savants started its incredible journey with a passion for innovation and digital excellence. Our breakthrough moment came when we participated in the prestigious <strong>National Startup and Innovation Program</strong> conducted by IIT Roorkee.
-                        </p>
-                        <p class="text-lg mb-6">
-                          Competing among some of the brightest minds and most innovative startups, we proudly secured <strong>first prize</strong> at this national event. This win validated our mission and gave us the momentum to accelerate growth, building solutions that help businesses thrive in the digital age.
-                        </p>
-                        <p class="text-lg mb-6">
-                          Today, we continue to expand on our success, offering world-class web and management systems, driven by our commitment to excellence and the recognition that innovation is at the heart of everything we do.
-                        </p>
-                      </div>
-              
-                      <!-- Image Section -->
-                      <div class="flex justify-center">
-                        <img src="https://via.placeholder.com/400x300" alt="IIT Roorkee Event" class="rounded-lg shadow-lg transform transition hover:scale-105">
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              
+
+
+
+
+
+
 
         </div>
         @include('components.contact')

@@ -1,4 +1,4 @@
-<div id="payments" class="p-4 sm:ml-64">
+<div id="dashboard" class="p-4 sm:ml-0">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
             <div class="flex items-center justify-center h-10 md:h-24 rounded-3xl bg-gray-50 dark:bg-gray-800">

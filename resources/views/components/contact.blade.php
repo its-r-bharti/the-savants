@@ -35,7 +35,7 @@
                                 </div>
                                 <p>+91 9056425289</p>
                             </li>
-                            {{-- <li class="flex items-center gap-x-3">
+                            <li class="flex items-center gap-x-3">
                                 <div class="flex-none text-gray-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                         stroke="currentColor" class="w-6 h-6">
@@ -46,7 +46,7 @@
                                     </svg>
                                 </div>
                                 <p>Mohali, Punjab, India</p>
-                            </li> --}}
+                            </li>
                             {{-- <li class="flex items-center gap-x-3">
                                 <div class="flex-none text-gray-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -70,7 +70,7 @@
                         </ul>
                     </div>
                     <!-- Google Map Embed -->
-                    {{-- <div class="mt-6">
+                    <div class="mt-6 border border-black rounded-md overflow-hidden">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.090063979931!2d76.72596637574325!3d30.70464768162561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910333b13a9e7a9%3A0xc32b917ff6d9491e!2sMohali%2C%20Punjab!5e0!3m2!1sen!2sin!4v1698084068661!5m2!1sen!2sin" 
                             width="100%" 
@@ -80,7 +80,7 @@
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div> --}}
+                    </div>
                 </div>
                 
                 <div class="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
@@ -90,13 +90,6 @@
                             <p>{{ Session::get('success') }}</p>
                         </div>
                     @endif
-
-
-
-
-
-
-
 
 
                     <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5">

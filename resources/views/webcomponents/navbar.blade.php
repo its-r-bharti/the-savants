@@ -26,7 +26,7 @@
             <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            @auth
+            {{-- @auth
                 <!-- When user is signed in, show their name -->
                 <div class="flex items-center space-x-3">
                     <x-dropdown align="right" width="48">
@@ -65,7 +65,9 @@
                 <!-- Show Log in button if user is not signed in -->
                 <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
                         aria-hidden="true">&rarr;</span></a>
-            @endauth
+            @endauth --}}
+            <a href="#contactModal" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900"
+                onclick="toggleModal(true)">Talk to Us </a>
         </div>
     </nav>
 
@@ -108,7 +110,7 @@
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
                     </div>
                     <div class="py-6">
-                        @auth
+                        {{-- @auth
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                             {{ Auth::user()->name }}
                         </a>
@@ -132,16 +134,98 @@
                         <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                             Log in
                         </a>
-                    @endauth
+                    @endauth --}}
+                    <a href="#contactModal"
+                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 "
+                            onclick="toggleModal(true)">
+                            Talk to Us
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<!-- Modal Overlay -->
+<div id="contactModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+    <!-- Modal Content -->
+    <div class="bg-white w-full max-w-md p-6 rounded-lg shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+            <h2 class="text-xl font-bold text-gray-800">Talk to Us</h2>
+            <button onclick="toggleModal(false)" class="text-gray-400 hover:text-gray-600">
+                ✕
+            </button>
+        </div>
+        @if (Session::has('success'))
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var successMessage = '{{ Session::get('success') }}';
+                    if (successMessage) {
+                        alert(successMessage);
+                    }
+                });
+            </script>
+        @endif
+        <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
+            @csrf
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" name="name" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="text" name="phone" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Organization</label>
+                    <input type="text" name="company" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea name="message" rows="3" required
+                    class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+            <button id="submitBtn" type="submit"
+                class="w-full py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
+                <span id="buttonText">Submit</span>
+                <span id="loadingSpinner" class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
 
 
 <script>
+     function toggleModal(show) {
+        const modal = document.getElementById('contactModal');
+        modal.classList.toggle('hidden', );
+    }
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const buttonText = document.getElementById('buttonText');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+
+    form.addEventListener('submit', function (e) {
+        // Show spinner and disable button
+        submitBtn.disabled = true;
+        buttonText.textContent = 'Sending...';
+        loadingSpinner.classList.remove('hidden');
+    });
     document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');

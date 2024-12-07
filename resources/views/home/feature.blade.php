@@ -14,47 +14,50 @@
         @include('components.function')
 
         {{-- starting Grow business with Online. --}}
-        <section class="py-10 bg-white sm:py-16 lg:py-24">
+        <section class="py-0 bg-white sm:py-0 lg:py-0">
             <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
                     <div class="pr-12 sm:pr-0">
                         <div class="relative max-w-xs mb-12">
-                            <img class="object-bottom rounded-md" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg" alt="" />
-        
-                            <img class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg" alt="" />
+                            <img class="object-bottom rounded-md" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg" alt="Team brainstorming session" />
+                
+                            <img class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg" alt="Satisfied client celebrating success" />
                         </div>
                     </div>
-        
+                
                     <div>
-                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Grow Our Business with Online.</h2>
-                        <p class="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Empowering Your Business Through Digital Excellence</h2>
+                        <p class="mt-4 text-base leading-relaxed text-gray-600">
+                            At *The Savants*, we specialize in delivering cutting-edge web development, advanced management systems, and seamless digital solutions. Our mission is to empower businesses, schools, and enterprises with tailored technology that drives growth, streamlines operations, and maximizes efficiency. Whether you need a dynamic website, an intuitive school management system, or a robust enterprise platform, we are your trusted partner for innovation and success.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section class="relative max-w-screen-xl mx-auto py-4 px-4 md:px-8">
             <div class="absolute top-0 left-0 w-full h-full bg-white opacity-40"></div>
             <div class="relative z-10 gap-5 items-center lg:flex">
                 <div class="flex-1 max-w-lg py-5 sm:mx-auto sm:text-center lg:max-w-max lg:text-left">
                     <h3 class="text-3xl text-gray-800 font-semibold md:text-4xl">
-                        Build your websites with <span class="text-indigo-600">high performance</span>
+                        Build Your Websites with <span class="text-indigo-600">High-Performance Solutions</span>
                     </h3>
                     <p class="text-gray-500 leading-relaxed mt-3">
-                        Nam erat risus, sodales sit amet lobortis ut, finibus eget metus. Cras aliquam ante ut tortor posuere feugiat. Duis sodales nisi id porta lacinia.
+                        At *The Savants*, we bring your vision to life with expertly crafted websites designed for speed, functionality, and user engagement. Our solutions are tailored to meet your unique needs, ensuring seamless integration and top-tier performance to drive your business forward.
                     </p>
-                    <a class="mt-5 px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center" href="javascript:void()">
-                        Try it out
+                    <a class="mt-5 px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center" href="/webapp">
+                        Get Started
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                         </svg>
                     </a>
                 </div>
                 <div class="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto">
-                    <img src="https://i.postimg.cc/kgd4WhyS/container.png" alt="" class="w-full" />
+                    <img src="https://i.postimg.cc/kgd4WhyS/container.png" alt="High-performance website design" class="w-full" />
                 </div>
             </div>
         </section>
+        
         {{-- ending Grow business with Online. --}}
 
         {{-- starting blog --}}
@@ -63,7 +66,7 @@
         {{-- ending of blog --}}
 
 {{-- starting Get full access to The savants. --}}
-        <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+        {{-- <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="max-w-2xl mx-auto text-left sm:text-center">
                     <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Get full access to The Savants</h2>
@@ -144,7 +147,7 @@
         </section>
 
         
-        
+         --}}
         @include('components.footer')
     </div>
 

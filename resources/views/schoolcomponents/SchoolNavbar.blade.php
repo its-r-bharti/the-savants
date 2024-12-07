@@ -18,129 +18,6 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            {{-- <div class="relative">
-                <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
-                    aria-expanded="false" id="product-menu-button">
-                    Product
-                    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
-                        aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-
-                <!-- Product flyout menu -->
-                <div class="absolute left-0 z-10 mt-3 hidden w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
-                    id="product-menu">
-                    <div class="p-4">
-                        <!-- School Management System -->
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                            <div
-                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="/school" class="block font-semibold text-gray-900">
-                                    Manage your School
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                                <p class="mt-1 text-gray-600">Get a better Management system for your school</p>
-                            </div>
-                        </div>
-
-                        <!-- Company Management System -->
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                            <div
-                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-gray-900">
-                                    Manage your Business
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                                <p class="mt-1 text-gray-600">Get a better Management system for your Business</p>
-                            </div>
-                        </div>
-
-                        <!-- Manage your shops -->
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                            <div
-                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-gray-900">
-                                    Manage your shops
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                                <p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
-                                <p class="mt-1 text-gray-600 text-red-700">Coming soon</p>
-                            </div>
-                        </div>
-
-                        <!-- Hardware -->
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                            <div
-                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18a2.25 2.25 0 002.25 2.25zm9.75-9.75h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25zm0 9.75h2.25a2.25 2.25 0 002.25-2.25v-2.25a2.25 2.25 0 00-2.25-2.25h-2.25A2.25 2.25 0 0013.5 18v2.25a2.25 2.25 0 002.25 2.25z" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-gray-900">
-                                    Hardware
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                                <p class="mt-1 text-gray-600">Let's Order Hardware our Hardware Product</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                        <a href="#"
-                            class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
-                            <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
-                                <path
-                                    d="M10 8.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM10 11.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM10 14.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
-                            </svg>
-                            Watch demo
-                        </a>
-
-                        <a href="#"
-                            class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
-                            <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
-                                <path
-                                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016.003 4H3.997a2 2 0 00-1.994 1.884zM18 8.118l-8 4-8-4V14a2 2 0 001.997 2h12.006A2 2 0 0018 14V8.118z" />
-                            </svg>
-                            Contact sales
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
-
             <a href="/school" class="text-sm font-semibold leading-6 text-gray-900">Feature</a>
             <a href="/schoolPrice" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
             <a href="/template" class="text-sm font-semibold leading-6 text-gray-900">Templates</a>
@@ -148,7 +25,7 @@
             <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            @auth
+            {{-- @auth
                 <!-- When user is signed in, show their name -->
                 <div class="flex items-center space-x-3">
                     <x-dropdown align="right" width="48">
@@ -187,7 +64,8 @@
                 <!-- Show Log in button if user is not signed in -->
                 <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
                         aria-hidden="true">&rarr;</span></a>
-            @endauth
+            @endauth --}}
+            <a href="#contactModal" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900"  onclick="toggleModal(true)">Talk to Us </a>
         </div>
     </nav>
 
@@ -227,7 +105,7 @@
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
                     </div>
                     <div class="py-6">
-                        @auth
+                        {{-- @auth
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                             {{ Auth::user()->name }}
                         </a>
@@ -251,7 +129,12 @@
                         <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                             Log in
                         </a>
-                    @endauth
+                    @endauth --}}
+
+                    <a href="#contactModal" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 " onclick="toggleModal(true)">
+                        Talk to Us
+                    </a>
+                    
                     </div>
                 </div>
             </div>
@@ -259,8 +142,86 @@
     </div>
 </header>
 
+<!-- Modal Overlay -->
+<div id="contactModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+    <!-- Modal Content -->
+    <div class="bg-white w-full max-w-md p-6 rounded-lg shadow-lg space-y-4">
+        <div class="flex justify-between items-center">
+            <h2 class="text-xl font-bold text-gray-800">Talk to Us</h2>
+            <button onclick="toggleModal(false)" class="text-gray-400 hover:text-gray-600">
+                ✕
+            </button>
+        </div>
+        @if (Session::has('success'))
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var successMessage = '{{ Session::get('success') }}';
+                    if (successMessage) {
+                        alert(successMessage);
+                    }
+                });
+            </script>
+        @endif
+        <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
+            @csrf
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" name="name" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="text" name="phone" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Organization</label>
+                    <input type="text" name="company" required
+                        class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea name="message" rows="3" required
+                    class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+            <button id="submitBtn" type="submit"
+                class="w-full py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
+                <span id="buttonText">Submit</span>
+                <span id="loadingSpinner" class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            </button>
+        </form>
+    </div>
+</div>
+
+
 
 <script>
+
+function toggleModal(show) {
+    const modal = document.getElementById('contactModal');
+    modal.classList.toggle('hidden', !show);
+}
+const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const buttonText = document.getElementById('buttonText');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+
+    form.addEventListener('submit', function (e) {
+        // Show spinner and disable button
+        submitBtn.disabled = true;
+        buttonText.textContent = 'Sending...';
+        loadingSpinner.classList.remove('hidden');
+    });
+
     document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');

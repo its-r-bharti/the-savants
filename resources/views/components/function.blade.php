@@ -1,22 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Main Content Section -->
 <main class="py-24">
     <main class="py-24">
-
-
         <!-- Services Section -->
         <section>
             <h2 class="text-5xl font-bold text-center mb-8 text-gray-800">Our Services</h2>
@@ -30,10 +14,7 @@
                       
                     </div>
                 </div>
-                <br><br>
-        
-            
-            
+                <br><br> 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 ">
                 <!-- Web Development & Management -->
                 <div class="bg-gradient-to-r from-blue-200 to-green-200 shadow-lg rounded-lg p-6 text-gray-900 flex flex-col justify-between">

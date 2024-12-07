@@ -36,7 +36,7 @@ Route::get('/schoolPrice', function () {
 //business
 
 Route::get('/office', function () {
-    return view('business.homepage');
+    return view('business.homepage2');
 });
 
 Route::get('/btemplate', function () {
