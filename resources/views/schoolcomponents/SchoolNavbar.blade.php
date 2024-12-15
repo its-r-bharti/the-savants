@@ -18,6 +18,7 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
+            <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
             <a href="/school" class="text-sm font-semibold leading-6 text-gray-900">Feature</a>
             <a href="/schoolPrice" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
             <a href="/template" class="text-sm font-semibold leading-6 text-gray-900">Templates</a>
@@ -65,7 +66,26 @@
                 <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
                         aria-hidden="true">&rarr;</span></a>
             @endauth --}}
-            <a href="#contactModal" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900"  onclick="toggleModal(true)">Talk to Us </a>
+            <div class="flex items-center space-x-4">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/919056425289" target="_blank" class="flex items-center space-x-2">
+                    <!-- Rounded WhatsApp Icon -->
+                    <div class="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                            class="h-6 w-6">
+                            <path
+                                d="M128 24C66.393 24 16 74.393 16 136c0 22.03 5.714 43.568 16.516 62.266l-11.156 41.328a8 8 0 0 0 9.848 9.847l41.328-11.156C92.432 234.286 113.97 240 136 240c61.607 0 112-50.393 112-112S189.607 24 128 24Zm0 16c52.936 0 96 43.064 96 96s-43.064 96-96 96a95.68 95.68 0 0 1-45.96-11.113 7.998 7.998 0 0 0-5.508-.603l-34.89 9.423 9.423-34.89a8 8 0 0 0-.602-5.508A95.68 95.68 0 0 1 32 136c0-52.936 43.064-96 96-96ZM88.28 80a8 8 0 0 0-8.007 7.925c-.105 11.03 3.467 23.745 14.454 36.43 13.608 15.504 28.507 25.376 45.722 30.345 8.726 2.51 17.526 3.133 26.263 2.114 6.206-.705 11.566-6.052 11.566-12.272v-16.288a8 8 0 0 0-8.007-7.925h-21.566l-.088.007c-6.684.551-10.83 3.275-14.834 6.388-3.352 2.685-7.14 5.637-13.42 2.106-10.91-6.14-19.737-15.517-28.45-27.712-.11-.155-.218-.311-.33-.464-3.635-5.023-.957-8.48 1.615-11.038 1.574-1.568 3.34-3.292 5.228-5.226 3.367-3.539 5.998-7.627 6.306-14.261v-2.02a8 8 0 0 0-8.007-7.925H88.28Z" />
+                        </svg>
+                    </div>
+                    <!-- WhatsApp Number -->
+                </a>
+
+                <!-- Talk to Us Button -->
+                <a href="#contactModal" class="text-lg font-semibold hover:text-red-600 leading-6 text-gray-900"
+                    onclick="toggleModal(true)">
+                    Talk to Us
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -90,6 +110,9 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
+                        <a href="/"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                            
                         
                         <a href="/school"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Feature</a>
@@ -133,6 +156,17 @@
 
                     <a href="#contactModal" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 " onclick="toggleModal(true)">
                         Talk to Us
+                    </a>
+                    <a href="https://wa.me/919056425289" target="_blank" class="flex items-center space-x-2">
+                        <!-- Rounded WhatsApp Icon -->
+                        <div class="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                                class="h-6 w-6">
+                                <path
+                                    d="M128 24C66.393 24 16 74.393 16 136c0 22.03 5.714 43.568 16.516 62.266l-11.156 41.328a8 8 0 0 0 9.848 9.847l41.328-11.156C92.432 234.286 113.97 240 136 240c61.607 0 112-50.393 112-112S189.607 24 128 24Zm0 16c52.936 0 96 43.064 96 96s-43.064 96-96 96a95.68 95.68 0 0 1-45.96-11.113 7.998 7.998 0 0 0-5.508-.603l-34.89 9.423 9.423-34.89a8 8 0 0 0-.602-5.508A95.68 95.68 0 0 1 32 136c0-52.936 43.064-96 96-96ZM88.28 80a8 8 0 0 0-8.007 7.925c-.105 11.03 3.467 23.745 14.454 36.43 13.608 15.504 28.507 25.376 45.722 30.345 8.726 2.51 17.526 3.133 26.263 2.114 6.206-.705 11.566-6.052 11.566-12.272v-16.288a8 8 0 0 0-8.007-7.925h-21.566l-.088.007c-6.684.551-10.83 3.275-14.834 6.388-3.352 2.685-7.14 5.637-13.42 2.106-10.91-6.14-19.737-15.517-28.45-27.712-.11-.155-.218-.311-.33-.464-3.635-5.023-.957-8.48 1.615-11.038 1.574-1.568 3.34-3.292 5.228-5.226 3.367-3.539 5.998-7.627 6.306-14.261v-2.02a8 8 0 0 0-8.007-7.925H88.28Z" />
+                            </svg>
+                        </div>
+                        <!-- WhatsApp Number -->
                     </a>
                     
                     </div>

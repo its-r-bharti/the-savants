@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PricingPlanController;
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -14,6 +15,9 @@ Route::get('/feature', function () {
 });
 Route::get('/about', function () {
     return view('home.about');
+});
+Route::get('/ourwork', function () {
+    return view('home.ourwork');
 });
 
 
@@ -101,3 +105,11 @@ Route::post('/send-standard-plan', [PricingPlanController::class, 'sendStandardP
 Route::post('/send-professional-plan', [PricingPlanController::class, 'sendProfessionalPlan']);
 
 require __DIR__.'/auth.php';
+
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    return response()->json(['message' => 'Caches cleared successfully!']);
+});

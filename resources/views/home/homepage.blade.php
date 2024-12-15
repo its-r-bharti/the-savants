@@ -8,10 +8,11 @@
 
 <body>
     <div class="bg-white">
-        @include('components.navbar')
-        @include('components.hero3')
-        {{-- @include('components.herosection') --}}
+        @include('components.navbar') 
+         @include('components.hero3')
+        @include('components.partner')
         @include('components.function')
+       
         @include('components.testimonial')
         @include('components.stats')
         @include('components.question')

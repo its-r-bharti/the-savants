@@ -1,50 +1,64 @@
-<section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How do we create success</h2>
-            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">At The Savants, we create success by turning your ideas into a thriving online presence. Our streamlined approach ensures that you have everything needed to succeed in today’s digital world — from concept to launch, we’re with you every step of the way.</p>
+
+<section class="bg-gray-800 text-white">
+    
+    <section class="py-16 px-4 sm:px-8">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <span class="bg-orange-400 text-sm uppercase tracking-widest font-semibold px-4 py-2 rounded-full mb-4">
+                Our Process
+            </span>
+<br><br><br>
+            <h2 class="text-3xl sm:text-4xl font-bold mt-2">Easy Steps To Get Your Solution</h2>
+            <p class="mt-4 text-gray-300">Just three simple steps to unlock your solution hassle-free. Let's make it easy
+                for you to get started!</p>
         </div>
 
-        <ul class="max-w-md mx-auto mt-16 space-y-12">
-            <li class="relative flex items-start">
-                <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
-
-                <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                    <svg class="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center hover:bg-gray-800 transition duration-300 rounded-lg p-4">
+                <div class="bg-orange-400 p-4 rounded-full shadow-lg transform hover:scale-110 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-8 h-8 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.75 4.75h14.5m-12 3.5h9m-7.5 3.5h6m-4.5 3.5h3m2 5.25H6.25c-.69 0-1.25-.56-1.25-1.25V5c0-.69.56-1.25 1.25-1.25h11.5c.69 0 1.25.56 1.25 1.25v14.25c0 .69-.56 1.25-1.25 1.25z" />
                     </svg>
                 </div>
-                <div class="ml-6">
-                    <h3 class="text-lg font-semibold text-black">Create a free account</h3>
-                    <p class="mt-4 text-base text-gray-600">Starting your journey with us is simple. Sign up for a free account and access our powerful tools designed to help you manage your business efficiently. Whether you're looking to manage school data or streamline office operations, we provide the right solutions tailored to your needs.</p>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-semibold">Book A Service</h3>
+                    <p class="mt-2 text-gray-300">Ready to get started? Schedule your service with us today.</p>
                 </div>
-            </li>
+            </div>
 
-            <li class="relative flex items-start">
-                <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
-
-                <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                    <svg class="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center hover:bg-gray-800 transition duration-300 rounded-lg p-4">
+                <div class="bg-orange-400 p-4 rounded-full shadow-lg transform hover:scale-110 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-8 h-8 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 11c.41 0 .75-.34.75-.75V7.5m0 7c0-.41-.34-.75-.75-.75H9m3 0h3m3-1.25v5.5c0 .69-.56 1.25-1.25 1.25H7.25C6.56 20 6 19.44 6 18.75v-5.5" />
                     </svg>
                 </div>
-                <div class="ml-6">
-                    <h3 class="text-lg font-semibold text-black">Build your website</h3>
-                    <p class="mt-4 text-base text-gray-600">Your website is the face of your online business, and we help you build it to perfection. Our team works closely with you to create a professional, user-friendly website that showcases your brand, whether you're developing a school management system, an office management platform, or any other digital solution.</p>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-semibold">Start Consultation</h3>
+                    <p class="mt-2 text-gray-300">Ready to talk? Start your consultation with us now and let's find the
+                        perfect solution for you.</p>
                 </div>
-            </li>
+            </div>
 
-            <li class="relative flex items-start">
-                <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                    <svg class="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center hover:bg-gray-800 transition duration-300 rounded-lg p-4">
+                <div class="bg-orange-400 p-4 rounded-full shadow-lg transform hover:scale-110 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-8 h-8 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 3v4.5c0 .41.34.75.75.75H7.5m0 0h9m0 0h3.75c.41 0 .75-.34.75-.75V3M7.5 7.5v13.25c0 .41.34.75.75.75H15.75c.41 0 .75-.34.75-.75V7.5m-4.5 4.5h3" />
                     </svg>
                 </div>
-                <div class="ml-6">
-                    <h3 class="text-lg font-semibold text-black">Release & launch</h3>
-                    <p class="mt-4 text-base text-gray-600">Once everything is in place, it’s time to launch. From thorough testing to ensuring a seamless user experience, we help you release your website or management system confidently. With The Savants by your side, your digital venture is ready to thrive and make an impact.</p>
+                <div class="text-center mt-4">
+                    <h3 class="text-xl font-semibold">Check Your Growth</h3>
+                    <p class="mt-2 text-gray-300">Keep track of your growth effortlessly. Let's measure your progress
+                        together.</p>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+    </section>
 </section>

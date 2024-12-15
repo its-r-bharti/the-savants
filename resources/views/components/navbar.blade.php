@@ -17,7 +17,10 @@
                 </svg>
             </button>
         </div>
+
         <div class="hidden lg:flex lg:gap-x-12 ">
+            <a href="/" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Home</a>
+            <a href="/feature" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Service</a>
             <div class="relative">
                 <button type="button" class="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900"
                     aria-expanded="false" id="product-menu-button">
@@ -35,7 +38,7 @@
                     id="product-menu">
                     <div class="p-4">
 
-                        <!-- website Management and development -->
+                        <!-- School Management System -->
                         <div
                             class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                             <div
@@ -47,35 +50,14 @@
                                 </svg>
                             </div>
                             <div class="flex-auto">
-                                <a href="/webapp" class="block font-semibold text-gray-900">
-                                    Web & App Service
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                                <p class="mt-1 text-gray-600">Everything you need to build and grow any website and
-                                    App—all in one place. </p>
-                            </div>
-                        </div>
-                        <!-- School Management System -->
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                            <div
-                                class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
                                 <a href="/school" class="block font-semibold text-gray-900">
                                     Manage your School
                                     <span class="absolute inset-0"></span>
                                 </a>
-                                <p class="mt-1 text-gray-600">Get a better Management system for your school</p>
+                                <p class="mt-1 text-gray-600">Get a better Management system for your school. </p>
                             </div>
                         </div>
+                        
 
                         <!-- Company Management System -->
                         <div
@@ -146,8 +128,8 @@
                 </div>
             </div>
 
-            <a href="/feature" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Features</a>
-            {{-- <a href="#" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Marketplace</a> --}}
+
+            <a href="/ourwork" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Our Work</a>
             <a href="/about" class="text-lg font-semibold hover:text-red-600 leading-6 text-gray-900">About Us</a>
         </div>
         <!-- Display admin name or login button -->
@@ -192,8 +174,28 @@
         <a href="{{ route('login') }}" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900">Log in <span
                 aria-hidden="true">&rarr;</span></a>
     @endauth --}}
-            <a href="#contactModal" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900"
-                onclick="toggleModal(true)">Talk to Us </a>
+            <div class="flex items-center space-x-4">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/919056425289" target="_blank" class="flex items-center space-x-2">
+                    <!-- Rounded WhatsApp Icon -->
+                    <div class="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                            class="h-6 w-6">
+                            <path
+                                d="M128 24C66.393 24 16 74.393 16 136c0 22.03 5.714 43.568 16.516 62.266l-11.156 41.328a8 8 0 0 0 9.848 9.847l41.328-11.156C92.432 234.286 113.97 240 136 240c61.607 0 112-50.393 112-112S189.607 24 128 24Zm0 16c52.936 0 96 43.064 96 96s-43.064 96-96 96a95.68 95.68 0 0 1-45.96-11.113 7.998 7.998 0 0 0-5.508-.603l-34.89 9.423 9.423-34.89a8 8 0 0 0-.602-5.508A95.68 95.68 0 0 1 32 136c0-52.936 43.064-96 96-96ZM88.28 80a8 8 0 0 0-8.007 7.925c-.105 11.03 3.467 23.745 14.454 36.43 13.608 15.504 28.507 25.376 45.722 30.345 8.726 2.51 17.526 3.133 26.263 2.114 6.206-.705 11.566-6.052 11.566-12.272v-16.288a8 8 0 0 0-8.007-7.925h-21.566l-.088.007c-6.684.551-10.83 3.275-14.834 6.388-3.352 2.685-7.14 5.637-13.42 2.106-10.91-6.14-19.737-15.517-28.45-27.712-.11-.155-.218-.311-.33-.464-3.635-5.023-.957-8.48 1.615-11.038 1.574-1.568 3.34-3.292 5.228-5.226 3.367-3.539 5.998-7.627 6.306-14.261v-2.02a8 8 0 0 0-8.007-7.925H88.28Z" />
+                        </svg>
+                    </div>
+                    <!-- WhatsApp Number -->
+                </a>
+
+                <!-- Talk to Us Button -->
+                <a href="#contactModal" class="text-lg font-semibold hover:text-red-600 leading-6 text-gray-900"
+                    onclick="toggleModal(true)">
+                    Talk to Us
+                </a>
+            </div>
+
+
         </div>
 
         {{-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -224,6 +226,11 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
+                        <a href="/"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                        <a href="/feature"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Service</a>
+
                         <div class="-mx-3">
                             <button type="button"
                                 class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -237,9 +244,7 @@
                                 </svg>
                             </button>
                             <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                                <a href="/webapp"
-                                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Web
-                                    & App Service</a>
+                                
                                 <a href="/school"
                                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Manage
                                     your School</a>
@@ -254,10 +259,8 @@
 
                             </div>
                         </div>
-                        <a href="/feature"
+                        <a href="/ourwork"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                        {{-- <a href="#"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a> --}}
                         <a href="/about"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About
                             Us</a>
@@ -296,6 +299,18 @@
                             onclick="toggleModal(true)">
                             Talk to Us
                         </a>
+                        <a href="https://wa.me/919056425289" target="_blank" class="flex items-center space-x-2">
+                            <!-- Rounded WhatsApp Icon -->
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                                    class="h-6 w-6">
+                                    <path
+                                        d="M128 24C66.393 24 16 74.393 16 136c0 22.03 5.714 43.568 16.516 62.266l-11.156 41.328a8 8 0 0 0 9.848 9.847l41.328-11.156C92.432 234.286 113.97 240 136 240c61.607 0 112-50.393 112-112S189.607 24 128 24Zm0 16c52.936 0 96 43.064 96 96s-43.064 96-96 96a95.68 95.68 0 0 1-45.96-11.113 7.998 7.998 0 0 0-5.508-.603l-34.89 9.423 9.423-34.89a8 8 0 0 0-.602-5.508A95.68 95.68 0 0 1 32 136c0-52.936 43.064-96 96-96ZM88.28 80a8 8 0 0 0-8.007 7.925c-.105 11.03 3.467 23.745 14.454 36.43 13.608 15.504 28.507 25.376 45.722 30.345 8.726 2.51 17.526 3.133 26.263 2.114 6.206-.705 11.566-6.052 11.566-12.272v-16.288a8 8 0 0 0-8.007-7.925h-21.566l-.088.007c-6.684.551-10.83 3.275-14.834 6.388-3.352 2.685-7.14 5.637-13.42 2.106-10.91-6.14-19.737-15.517-28.45-27.712-.11-.155-.218-.311-.33-.464-3.635-5.023-.957-8.48 1.615-11.038 1.574-1.568 3.34-3.292 5.228-5.226 3.367-3.539 5.998-7.627 6.306-14.261v-2.02a8 8 0 0 0-8.007-7.925H88.28Z" />
+                                </svg>
+                            </div>
+                            <!-- WhatsApp Number -->
+                        </a>
                     </div>
 
                 </div>
@@ -315,7 +330,7 @@
         </div>
         @if (Session::has('success'))
             <script>
-                document.addEventListener('DOMContentLoaded', function () {
+                document.addEventListener('DOMContentLoaded', function() {
                     var successMessage = '{{ Session::get('success') }}';
                     if (successMessage) {
                         alert(successMessage);
@@ -357,12 +372,12 @@
             <button id="submitBtn" type="submit"
                 class="w-full py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
                 <span id="buttonText">Submit</span>
-                <span id="loadingSpinner" class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                <span id="loadingSpinner"
+                    class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
             </button>
         </form>
     </div>
 </div>
-
 
 <script>
     function toggleModal(show) {
@@ -374,13 +389,12 @@
     const buttonText = document.getElementById('buttonText');
     const loadingSpinner = document.getElementById('loadingSpinner');
 
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', function(e) {
         // Show spinner and disable button
         submitBtn.disabled = true;
         buttonText.textContent = 'Sending...';
         loadingSpinner.classList.remove('hidden');
     });
-
     document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -410,6 +424,3 @@
         });
     });
 </script>
-</body>
-
-</html>
