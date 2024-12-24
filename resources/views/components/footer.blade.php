@@ -77,7 +77,7 @@
                     <li>
                         <a href="/feature" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
-                            Features </a>
+                            services </a>
                     </li>
 
                     {{-- <li>

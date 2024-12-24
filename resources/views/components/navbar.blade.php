@@ -20,7 +20,7 @@
 
         <div class="hidden lg:flex lg:gap-x-12 ">
             <a href="/" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Home</a>
-            <a href="/feature" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Features</a>
+            <a href="/feature" class="text-lg font-semibold leading-6 hover:text-red-600 text-gray-900">Service</a>
             <div class="relative">
                 <button type="button" class="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900"
                     aria-expanded="false" id="product-menu-button">
