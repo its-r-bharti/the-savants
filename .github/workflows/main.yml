@@ -39,7 +39,7 @@ jobs:
         server: thesavants.in  # Your website's FTP server
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/  # Adjust if your folder is different
+        server-dir: /public_html/  # Adjust if  your folder is different
         local-dir: ./  # Deploy everything from the root of the repository
         timeout: 7200  # Timeout in seconds (120 minutes)
         exclude: |
