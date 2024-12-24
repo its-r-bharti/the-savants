@@ -89,7 +89,7 @@
                     <li>
                         <a href="#" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
-                            Career </a>
+                            CareerES </a>
                     </li>
                 </ul>
             </div>
