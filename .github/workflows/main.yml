@@ -50,15 +50,7 @@ jobs:
           storage/**
           .vscode/**
           *.log
-
-    - name: Run Post Deployment Commands (Optional)
-      if: success()  # Only run this step if the previous steps succeed
-      run: |
-        ssh -o StrictHostKeyChecking=no -T ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_SERVER }} << 'EOF'
-          cd /home/u512945377.thesavants/public_html/
-          php artisan migrate --force
-          php artisan config:cache
-          php artisan route:cache
-        EOF
+        
       env:
         SSH_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+   
