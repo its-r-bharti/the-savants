@@ -77,7 +77,7 @@
                     <li>
                         <a href="/feature" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
-                            Services </a>
+                            Service </a>
                     </li>
 
                     {{-- <li>
@@ -127,7 +127,7 @@
             <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
                 <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
 
-                <form action="#" method="POST" class="mt-6">
+                {{-- <form action="#" method="POST" class="mt-6">
                     <div>
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" name="email" id="email" placeholder="Enter your email"
@@ -136,7 +136,7 @@
 
                     <button type="submit"
                         class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
-                </form>
+                </form> --}}
             </div>
         </div>
 
