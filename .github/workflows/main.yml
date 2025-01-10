@@ -1,9 +1,10 @@
+
 name: FTP Deploy to Production
 
 on:
   push:
     branches:
-      - main  # Deploy only when pushing to the main branch
+      - main  # Deploy when pushing to the main branch
 
 jobs:
   ftp-deploy:
@@ -17,40 +18,51 @@ jobs:
     - name: Install PHP and Composer
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2'
+        php-version: '8.2'  # Adjust this based on your Laravel version
         extensions: mbstring, pdo, pdo_mysql, intl, gd, bcmath, zip
         tools: composer
 
     - name: Install Composer Dependencies
       run: composer install --no-dev --optimize-autoloader
-
+    
     - name: Build Frontend
       run: |
         npm install
+        chmod +x node_modules/.bin/vite  # Fix Vite permission
         npm run build
+
+    - name: Fix npm Vulnerabilities (Optional)
+      run: npm audit fix --force
 
     - name: Deploy to FTP (Hostinger)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.3
       with:
-        server: thesavants.in
+        server: thesavants.in  # Your website's FTP server
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/
-        local-dir: ./  # Deploy everything from the root directory
-        timeout: 7200
+        server-dir: /public_html/  # Adjust if your folder is different
+        local-dir: ./  # Deploy everything from the root of the repository
+        timeout: 7200  # Timeout in seconds (120 minutes)
         exclude: |
-          node_modules/**
-          storage/**
-          .env
-          tests/**
-          .git/**  # Exclude Git repository files
           vendor/**
-        include: |
-          public/**
-          app/**
-          bootstrap/**
-          config/**
-          database/**
-          resources/**
-          routes/**
-          artisan
+          node_modules/**
+          .git/**
+          .env
+          storage/**
+          tests/**
+          public/admin/**
+          .idea/**
+          .vscode/**
+          *.log
+
+    - name: Run Post Deployment Commands (Optional)
+      if: success()  # Only run this step if the previous steps succeed
+      run: |
+        ssh -o StrictHostKeyChecking=no -T ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} << 'EOF'
+          cd /home/u512945377.thesavants/public_html/
+          php artisan migrate --force
+          php artisan config:cache
+          php artisan route:cache
+        EOF
+      env:
+        SSH_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
