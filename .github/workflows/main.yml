@@ -3,7 +3,7 @@ name: FTP Deploy to Production
 on:
   push:
     branches:
-      - main
+      - main  # Deploy only when pushing to the main branch
 
 jobs:
   ftp-deploy:
@@ -36,19 +36,21 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
-        local-dir: ./public/build/ # Deploy the build folder
+        local-dir: ./  # Deploy everything from the root directory
         timeout: 7200
         exclude: |
-          vendor/**
           node_modules/**
-          .env
           storage/**
-
-    - name: Clear Laravel Cache
-      run: |
-        php artisan config:clear
-        php artisan cache:clear
-        php artisan view:clear
-
-    - name: Set Correct Permissions
-      run: chmod -R 755 ./public_html/build
+          .env
+          tests/**
+          .git/**  # Exclude Git repository files
+          vendor/**
+        include: |
+          public/**
+          app/**
+          bootstrap/**
+          config/**
+          database/**
+          resources/**
+          routes/**
+          artisan
