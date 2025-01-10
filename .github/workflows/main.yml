@@ -36,7 +36,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
-        local-dir: ./public/build # Deploy the build folder
+        local-dir: ./public/build/ # Deploy the build folder
         timeout: 7200
         exclude: |
           vendor/**
