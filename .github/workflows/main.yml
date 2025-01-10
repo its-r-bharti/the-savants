@@ -30,11 +30,10 @@ jobs:
 
     - name: Verify Tailwind Build Output (Optional)
       run: |
-        if [ ! -f public/build/styles.css ]; then
+        if [ ! -f public/build/assets/app-B3nbrKUP.css ] && [ ! -f public/build/assets/app-D52E7muy.css ]; then
           echo "Tailwind build output not found!" && exit 1
         fi
         echo "Tailwind build output exists."
-
     - name: Deploy to FTP (Hostinger)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.3
       with:
