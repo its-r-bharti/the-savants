@@ -24,7 +24,7 @@ jobs:
     - name: Install Composer Dependencies
       run: composer install --no-dev --optimize-autoloader
     
-    - name: Build Frontend (Optional)
+    - name: Build Frontend
       run: |
         npm install
         chmod +x node_modules/.bin/vite  # Fix Vite permission
