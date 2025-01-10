@@ -3,8 +3,8 @@
 /vendor
 /node_modules
 /storage/*.key
-/storage/debugbar
+storage/logs/*.log
 
-/tests
-/.git
-.phpunit.result.cache
+
+
+

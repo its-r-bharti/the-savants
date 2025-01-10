@@ -111,7 +111,7 @@
                                 class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
                         </div>
                         <button
-                            class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
+                            class="w-full px-4 py-2 text-white font-medium bg-indigo-500 border-2 border-indigo-500  hover:text-gray-900 hover:bg-indigo-600 active:bg-orange-600 rounded-lg duration-150">
                             Submit
                         </button>
                     </form>

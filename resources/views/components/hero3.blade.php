@@ -1,7 +1,7 @@
 <style>
     
 </style>
-<section class="py-24 bg-gradient-to-b from-green-50 to-green-100s sm:py-24 lg:py-24">
+<section class="py-24 bg-gradient-to-b from-green-50 to-green-100 sm:py-24 lg:py-24">
     
 <div class="relative bg-gradient-to-b from-green-50 o-green-100">
     <section class="overflow-hidden">
@@ -24,7 +24,7 @@
                                 class="text-3xl md:text-5xl font-bold text-black sm:text-6xl xl:text-7xl zoom-text">
                                 Grow Your <br> 
                                 <span id="dynamic-word" 
-                                      class="inline-block text-red-600 font-serif">
+                                      class="inline-block text-blue-800 font-serif">
                                     Enterprise
                                 </span>
                             </h1>
@@ -34,7 +34,7 @@
                             </p>
                             <a href="/webapp" 
                                title="" 
-                               class="inline-flex items-center px-4 py-4 md:px-6 md:py-5 mt-6 text-sm md:text-base font-semibold text-black transition-all duration-200 bg-green-300 hover:bg-green-400 focus:bg-green-400 fade-in-3" 
+                               class="inline-flex items-center px-2 py-2 md:px-4 md:py-3 mt-6 text-sm md:text-base font-semibold text-black transition-all duration-100 bg-orange-500 border-2 border-orange-500 rounded-full hover:bg-green-100 focus:bg-orange-600 fade-in-3"
                                role="button">
                                 Explore Our Product
                             </a>
