@@ -45,11 +45,11 @@ jobs:
         exclude: |
           vendor/**
           node_modules/**
-          .git/**
+        
           .env
           storage/**
-          .vscode/**
-          *.log
+          
+        
         
       env:
         SSH_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
