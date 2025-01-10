@@ -52,4 +52,5 @@ jobs:
           .git/**
           vendor/**
         include: |
+          public/build/assets/**
           public/build/**   # Make sure built Tailwind CSS is included
