@@ -3,16 +3,20 @@ name: FTP Deploy to Production
 on:
   push:
     branches:
-      - main  # Deploy only when pushing to the main branch
+      - main
 
 jobs:
   ftp-deploy:
-    name: FTP Deployment
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
+
+    - name: Install Node and Build Frontend
+      run: |
+        npm install
+        npm run build
 
     - name: Install PHP and Composer
       uses: shivammathur/setup-php@v2
@@ -24,11 +28,6 @@ jobs:
     - name: Install Composer Dependencies
       run: composer install --no-dev --optimize-autoloader
 
-    - name: Build Frontend
-      run: |
-        npm install
-        npm run build
-
     - name: Deploy to FTP (Hostinger)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.3
       with:
@@ -36,22 +35,20 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
-        local-dir: ./  # Deploy everything from the root directory
+        local-dir: ./  # Root directory
         timeout: 7200
         exclude: |
           node_modules/**
           storage/**
           .env
           tests/**
-          .git/**  # Exclude Git repository files
+          .git/**
           vendor/**
         include: |
-          public/**
-          app/**
-          bootstrap/**
-          config/**
-          database/**
-          resources/**
-          routes/**
-          artisan
+          public/build/**
 
+    - name: Clear Laravel Cache
+      run: |
+        php artisan config:clear
+        php artisan cache:clear
+        php artisan view:clear
