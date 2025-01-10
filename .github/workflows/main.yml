@@ -27,7 +27,6 @@ jobs:
     - name: Build Frontend
       run: |
         npm install
-        npm run dev
         npm run build
 
     - name: Deploy to FTP (Hostinger)
