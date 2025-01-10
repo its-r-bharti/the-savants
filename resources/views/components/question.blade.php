@@ -107,7 +107,7 @@
                 <p class="text-sm mb-6 text-center">If you don’t see the answer you need, don’t hesitate to contact us.
                 </p>
                 <a href="#contactModal"
-                    class="block w-[50%] h-10 flex items-center justify-center text-white bg-orange-500 rounded-3xl border-2 border-orange-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200 mb-4"
+                    class="block w-[50%] h-10 flex items-center justify-center text-white bg-indigo-500 rounded-3xl border-2 border-orange-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200 mb-4"
                     onclick="toggleModal(true)">Contact Us</a>
 
             </div>
