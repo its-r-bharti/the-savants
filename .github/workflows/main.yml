@@ -27,7 +27,6 @@ jobs:
     - name: Build Frontend
       run: |
         npm install
-        chmod +x node_modules/.bin/vite
         npm run build
 
     - name: Deploy to FTP (Hostinger)
@@ -37,15 +36,13 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
-        local-dir: ./dist # Ensure you're deploying the built assets
+        local-dir: ./public/build # Deploy the build folder
         timeout: 7200
         exclude: |
           vendor/**
           node_modules/**
           .env
           storage/**
-        include: |
-          dist/**
 
     - name: Clear Laravel Cache
       run: |
@@ -54,4 +51,4 @@ jobs:
         php artisan view:clear
 
     - name: Set Correct Permissions
-      run: chmod -R 755 ./public_html
+      run: chmod -R 755 ./public_html/build
