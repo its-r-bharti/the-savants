@@ -1,7 +1,13 @@
 <!-- Main Content Section -->
 
     <main class="py-24">
-        <h2 class="text-5xl font-bold text-center mb-8 text-gray-800">Our Services</h2>
+        
+        <div class="flex items-center justify-center">
+            <span class="bg-orange-400 text-center text-sm uppercase tracking-widest font-semibold px-4 py-2 rounded-full">
+                Our Services
+            </span>
+        </div>
+        
 
 
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

@@ -1,18 +1,20 @@
-<section class="py-4 bg-gray-100 sm:py-4 lg:py-4">
+<section class="py-4 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 sm:py-4 lg:py-4">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">What our customers say</h2>
+            <span class="bg-orange-400   text-sm uppercase tracking-widest font-semibold px-4 py-2 rounded-full mb-4">
+                What our customers say
+            </span>
             <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">At The Savants, our customers are at
                 the heart of everything we do. We take pride in delivering exceptional services and solutions, and the
                 feedback we receive is a testament to our commitment to excellence.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
-            <div class="overflow-hidden bg-white rounded-md">
+            <div class="overflow-hidden bg-white rounded-2xl">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
                         <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                            src="https://sansaniexpressnews.com/assets/logo.png"
+                            src="{{ asset('img/sansani.png')  }}"
                             alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
                             <p class="text-base font-semibold text-black truncate">Team</p>
@@ -37,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="overflow-hidden bg-white rounded-md">
+            <div class="overflow-hidden bg-white rounded-2xl">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
                         <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
@@ -59,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="overflow-hidden bg-white rounded-md">
+            <div class="overflow-hidden bg-white rounded-2xl">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
                         <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
@@ -81,14 +83,14 @@
                 </div>
             </div>
 
-            <div class="overflow-hidden bg-white rounded-md">
+            <div class="overflow-hidden bg-white rounded-2xl">
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
                         <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                            src="{{ asset('img/woman.png')  }}"
+                            src="{{ asset('img/profile.png')  }}"
                             alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
-                            <p class="text-base font-semibold text-black truncate">Pushpanjali Sharma</p>
+                            <p class="text-base font-semibold text-black truncate">Deepak</p>
                             <p class="text-sm text-gray-600 truncate">–Legalpalz</p>
                         </div>
                         <a href="#" title="" class="inline-block text-sky-500">

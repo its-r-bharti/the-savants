@@ -7,9 +7,11 @@
 <section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                Latest from Blog
-            </h2>
+            <div class="flex items-center justify-center">
+                <span class="bg-orange-400 text-center text-sm uppercase tracking-widest font-semibold px-4 py-2 rounded-full">
+                    BLOG
+                </span>
+            </div>
             <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
                 Discover the latest trends and insights from our experts.
             </p>

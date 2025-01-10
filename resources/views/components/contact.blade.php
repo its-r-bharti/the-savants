@@ -5,7 +5,9 @@
         <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
             <div class="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                 <div class="max-w-lg space-y-3">
-                    <h3 class="text-indigo-600 font-semibold">Contact</h3>
+                    <span class="bg-orange-400 text-sm text-white uppercase tracking-widest font-semibold px-4 py-2 rounded-full mb-4">
+                        Contact
+                    </span>
                     <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
                         Let’s Get to know you
                     </p>
@@ -111,7 +113,7 @@
                                 class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
                         </div>
                         <button
-                            class="w-full px-4 py-2 text-white font-medium bg-indigo-500 border-2 border-indigo-500  hover:text-gray-900 hover:bg-indigo-600 active:bg-orange-600 rounded-lg duration-150">
+                            class="w-full px-4 py-2 text-white font-medium bg-indigo-500 border-2 border-indigo-500  hover:text-gray-900 hover:bg-gray-50 active:bg-indigo-600 rounded-lg duration-150">
                             Submit
                         </button>
                     </form>

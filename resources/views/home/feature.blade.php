@@ -315,7 +315,7 @@
                     <p class="text-gray-500 leading-relaxed mt-3">
                         At *The Savants*, we bring your vision to life with expertly crafted websites designed for speed, functionality, and user engagement. Our solutions are tailored to meet your unique needs, ensuring seamless integration and top-tier performance to drive your business forward.
                     </p>
-                    <a class="mt-5 px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center" href="/webapp">
+                    <a class="mt-5 px-4 py-2 text-white bg-indigo-500 rounded-3xl border-2 border-indigo-500 hover:bg-white hover:text-indigo-600 rounded-full inline-flex items-center" href="/webapp">
                         Get Started
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>

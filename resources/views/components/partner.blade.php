@@ -1,10 +1,12 @@
 <div class="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 py-12">
   <div class="container mx-auto text-center">
     <!-- Section Title -->
-    <h3 class="text-3xl font-bold mb-8 flex items-center justify-center gap-3 text-gray-700">
-      <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
-      Our Partners
-    </h3>
+    <div class="flex items-center justify-center">
+      <span class="bg-orange-400 text-center text-sm uppercase tracking-widest font-semibold px-4 py-2 rounded-full">
+          Our Partners
+      </span>
+  </div>
+  <br>
 
     <!-- Slider Section -->
     <div class="overflow-hidden relative">

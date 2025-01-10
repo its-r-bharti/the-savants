@@ -7,7 +7,7 @@
             <!-- FAQ Header -->
             <div class="lg:col-span-2">
                 <span
-                    class="inline-block px-4 py-2 mb-4 text-sm font-semibold text-orange-600 bg-orange-100 rounded-full">FAQ</span>
+                    class="inline-block px-4 py-2 mb-4 text-sm font-semibold text-white bg-orange-400 rounded-full">FAQ</span>
                 <h2 class="text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl">General Question</h2>
                 <p class="max-w-xl mt-4 text-lg leading-relaxed text-gray-600">Do you have a question? Don’t hesitate to
                     reach out to us. Our team is here to assist you every step of the way.</p>
@@ -107,7 +107,7 @@
                 <p class="text-sm mb-6 text-center">If you don’t see the answer you need, don’t hesitate to contact us.
                 </p>
                 <a href="#contactModal"
-                    class="block w-[50%] h-10 flex items-center justify-center text-white bg-indigo-500 rounded-3xl border-2 border-orange-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200 mb-4"
+                    class="block w-[50%] h-10 flex items-center justify-center text-white bg-indigo-500 rounded-3xl border-2 border-indigo-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200 mb-4"
                     onclick="toggleModal(true)">Contact Us</a>
 
             </div>
@@ -170,7 +170,7 @@
                     class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
             </div>
             <button id="submitBtn" type="submit"
-                class="w-full py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
+                class="w-full py-2 text-sm font-medium text-white bg-indigo-500 border-2 border-orange-500  hover:text-gray-900 hover:bg-gray-50 active:bg-indigo-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
                 <span id="buttonText">Submit</span>
                 <span id="loadingSpinner"
                     class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>

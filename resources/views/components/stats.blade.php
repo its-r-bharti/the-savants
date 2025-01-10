@@ -1,11 +1,11 @@
-<section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
-    <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+<section class="py-6 bg-gray-100 sm:py-4 lg:py-6">
+    {{-- <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
             <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Behind every number is a milestone, a success, and a reflection of the dedication we bring to our work. Our journey is shaped by experience, innovation, and the trust of our clients.</p>
-        </div>
+        </div> --}}
 
-        <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 mt-2 text-center lg:mt-4 sm:gap-x-8 md:grid-cols-3">
             <div>
                 <h3 class="font-bold text-7xl">
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 2+ </span>
