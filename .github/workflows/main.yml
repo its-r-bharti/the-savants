@@ -3,53 +3,53 @@ name: FTP Deploy to Production
 on:
   push:
     branches:
-      - main
+      - main  # Deploy when pushing to the main branch
 
 jobs:
   ftp-deploy:
+    name: FTP Deployment
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Install Node.js and Build Frontend
-      run: |
-        npm install
-        npm run build   # Ensure Tailwind is built correctly
-
     - name: Install PHP and Composer
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2'
+        php-version: '8.2'  # Adjust this based on your Laravel version
         extensions: mbstring, pdo, pdo_mysql, intl, gd, bcmath, zip
         tools: composer
 
     - name: Install Composer Dependencies
       run: composer install --no-dev --optimize-autoloader
-
-    - name: Verify Tailwind Build Output (Optional)
+    
+    - name: Build Frontend
       run: |
-        if [ ! -f public/build/assets/app-B3nbrKUP.css ] && [ ! -f public/build/assets/app-D52E7muy.css ]; then
-          echo "Tailwind build output not found!" && exit 1
-        fi
-        echo "Tailwind build output exists."
+        npm install
+        chmod +x node_modules/.bin/vite  # Fix Vite permission
+        npm run build
+
+    - name: Fix npm Vulnerabilities (Optional)
+      run: npm audit fix --force
+
     - name: Deploy to FTP (Hostinger)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.3
       with:
-        server: thesavants.in
+        server: thesavants.in  # Your website's FTP server
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/
-        local-dir: ./   # Root directory
-        timeout: 7200
+        server-dir: /public_html/  # Adjust if  your folder is different
+        local-dir: ./  # Deploy everything from the root of the repository
+        timeout: 7200  # Timeout in seconds (120 minutes)
         exclude: |
-          node_modules/**
-          storage/**
-          .env
-          tests/**
-          .git/**
           vendor/**
-        include: |
-          public/build/assets/**
-          public/build/**   # Make sure built Tailwind CSS is included
+          node_modules/**
+        
+          .env
+          storage/**
+          
+        
+        
+      env:
+        SSH_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
