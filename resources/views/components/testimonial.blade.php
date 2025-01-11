@@ -14,7 +14,7 @@
                 <div class="px-5 py-6">
                     <div class="flex items-center justify-between">
                         <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                            src="{{ asset('img/sansani.png')  }}"
+                            src="{{ asset('img/Sansani.png')  }}"
                             alt="" />
                         <div class="min-w-0 ml-3 mr-auto">
                             <p class="text-base font-semibold text-black truncate">Team</p>
