@@ -21,7 +21,7 @@
         
         <!-- Duplicate Logos for Smooth Loop -->
         <img src="{{ asset('img/logo.png') }}" alt="The Savants" class="h-20 object-contain mx-auto">
-        <img src="{{ asset('img/sansani.png') }}" alt="Sansani Express News" class="h-20 object-contain mx-auto">
+        <img src="{{ asset('img/Sansani.png') }}" alt="Sansani Express News" class="h-20 object-contain mx-auto">
         <img src="https://www.rase.co.in/_next/image?url=%2Fshiksha.png&w=640&q=75" alt="Siksha Mahakumbh" class="h-20 object-contain mx-auto">
         <img src="https://legalpalz.com/img/about/Legal-Pal-Logo.png" alt="Legal Palz" class="h-20 object-contain mx-auto">
         <img src="https://www.stpaulspalampur.com/assets/images1/logo.webp" alt="St. Paul's Senior Secondary School" class="h-20 object-contain mx-auto">

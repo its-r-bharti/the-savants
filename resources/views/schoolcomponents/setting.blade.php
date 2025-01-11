@@ -24,7 +24,7 @@
                         </div>
                         <h3 class="mt-8 text-lg font-semibold text-black">General Settings</h3>
                         <p class="mt-4 text-sm text-gray-600">Manage overall system settings, including user preferences, notifications, and application behavior.</p>
-                        <button class="mt-4 px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">Configure</button>
+                        {{-- <button class="mt-4 px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">Configure</button> --}}
                     </div>
 
                     <div>
@@ -35,7 +35,7 @@
                         </div>
                         <h3 class="mt-8 text-lg font-semibold text-black">SMS Settings</h3>
                         <p class="mt-4 text-sm text-gray-600">Configure SMS notifications for students and parents to ensure timely communication regarding exams and updates.</p>
-                        <button class="mt-4 px-4 py-2 text-white bg-orange-600 rounded hover:bg-orange-700">Configure</button>
+                        {{-- <button class="mt-4 px-4 py-2 text-white bg-orange-600 rounded hover:bg-orange-700">Configure</button> --}}
                     </div>
 
                     <div>
@@ -46,7 +46,7 @@
                         </div>
                         <h3 class="mt-8 text-lg font-semibold text-black">Language Settings</h3>
                         <p class="mt-4 text-sm text-gray-600">Select and manage the languages available in the system for better accessibility for all users.</p>
-                        <button class="mt-4 px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700">Configure</button>
+                        {{-- <button class="mt-4 px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700">Configure</button> --}}
                     </div>
 
                     <div>
@@ -57,7 +57,7 @@
                         </div>
                         <h3 class="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
                         <p class="mt-4 text-sm text-gray-600">Manage filters for different data sets within the application to streamline user experience and data accessibility.</p>
-                        <button class="mt-4 px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">Configure</button>
+                        {{-- <button class="mt-4 px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">Configure</button> --}}
                     </div>
                 </div>
             </div>

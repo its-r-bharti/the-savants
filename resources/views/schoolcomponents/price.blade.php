@@ -40,7 +40,7 @@
                     </div>
 
                     <button id="open-standard-form"
-                        class="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-gray-900 transition-all duration-200 bg-transparent border-2 rounded-full border-fuchsia-600 hover:bg-fuchsia-600 hover:text-white focus:text-white focus:bg-fuchsia-600">
+                        class="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-gray-900 transition-all duration-200 bg-transparent border-2 rounded-full border-indigo-600 hover:bg-indigo-500 hover:text-white focus:text-white focus:bg-indigo-600">
                         Start 30 Days Free Trial
                     </button>
 
@@ -133,7 +133,7 @@
                     </div>
 
                     <button id="open-professional-form"
-                        class="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-white transition-all duration-200 border-2 border-transparent rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80">
+                        class="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-gray-800 transition-all duration-200 border-2 border-indigo-600 rounded-full  bg-white hover:bg-gradient-to-r from-green-200 via-blue-200 to-blue-300 focus:opacity-80">
                         Start 30 Days Free Trial
                     </button>
                     <ul class="flex flex-col mt-8 space-y-4">

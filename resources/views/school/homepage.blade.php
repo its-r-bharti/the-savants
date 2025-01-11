@@ -12,14 +12,8 @@
 
 
         <div class="relative" x-data="{ state: false }">
-            <div class="absolute inset-0 blur-xl h-[580px]"
-                style="
-                background: linear-gradient(
-                  143.6deg,
-                  rgba(192, 132, 252, 0) 20.79%,
-                  rgba(232, 121, 249, 0.26) 40.92%,
-                  rgba(204, 171, 238, 0) 70.35%
-                );
+            <div class="absolute inset-0 blur-xl h-[100%]
+            bg-gradient-to-r from-green-100 via-blue-100 to-blue-200
               ">
             </div>
             <div class="relative">
@@ -93,7 +87,7 @@
                                 
                                     <div class="flex items-center gap-x-3 sm:text-sm">
                                         <a href="https://school.thesavants.in/"
-                                            class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                                            class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-indigo-500 border-2 border-indigo-500 duration-150 hover:bg-green-100 hover:text-gray-800 active:bg-indigo-500 active:text-white rounded-full md:inline-flex">
                                             Request a Demo
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                 fill="currentColor" class="w-5 h-5">
@@ -102,7 +96,7 @@
                                                     clipRule="evenodd" />
                                             </svg>
                                         </a>
-                                        <a href="#subscriptionform"
+                                        {{-- <a href="#subscriptionform"
                                             class="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
                                             Subscription
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -111,7 +105,7 @@
                                                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                                     clipRule="evenodd" />
                                             </svg>
-                                        </a>
+                                        </a> --}}
                                     </div>
                                 </div>
                                 <div class="flex-1 hidden md:block">

@@ -9,12 +9,11 @@
 <body>
     <div class="bg-white">
         @include('schoolcomponents.SchoolNavbar')
-        <br>
-        <br>
-        <div class="bg-white-900">
+        
+        <div class="bg-gradient-to-r from-green-100 via-blue-100 to-blue-200">
 
 
-            <div class="bg-gradient-to-b from-green-50 to-green-100">
+            <div class=" bg-gradient-to-r from-green-100 via-blue-100 to-blue-200">
 
 
                 <section class="py-10 sm:py-16 lg:py-24">
@@ -35,7 +34,7 @@
 
                                 <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
                                     <a href="/school" title=""
-                                        class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 rounded-3xl bg-orange-500 hover:bg-orange-600 focus:bg-orange-600"
+                                        class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white bg-indigo-500 rounded-3xl border-2 border-indigo-500 hover:bg-green-100 hover:text-gray-800 active:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition duration-200"
                                         role="button"> Start exploring </a>
 
                                 </div>
@@ -66,7 +65,7 @@
         <!-- testimonials -->
         @include('schoolcomponents.testimonials')
 
-        @include('schoolcomponents.subscriptionform')
+        {{-- @include('schoolcomponents.subscriptionform') --}}
 
 
 

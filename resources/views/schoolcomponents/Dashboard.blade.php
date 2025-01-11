@@ -21,8 +21,8 @@
                         comprehensive school management system. From attendance tracking to fee management, everything
                         you need is in one place.
                     </p>
-                    <a class="mt-5 px-4 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-full inline-flex items-center"
-                        href="https://school.sarvatr.co.in/">
+                    <a class="mt-5 px-4 py-2 text-white font-medium bg-indigo-500 border-2 border-indigo-500 duration-150 hover:bg-white hover:text-gray-800 active:bg-indigo-500 active:text-white rounded-full inline-flex items-center"
+                        href="https://school.thesavants.in/">
                         Try it out
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1 duration-150" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
