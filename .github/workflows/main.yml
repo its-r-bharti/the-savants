@@ -30,8 +30,8 @@ jobs:
         chmod +x node_modules/.bin/vite  # Fix Vite permission
         npm run build
 
-    - name: Fix npm Vulnerabilities (Optional)
-      run: npm audit fix --force
+    # - name: Fix npm Vulnerabilities (Optional)
+    #   run: npm audit fix --force
 
     - name: Deploy to FTP (Hostinger)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.3
