@@ -12,7 +12,8 @@
 
 
         <div class="relative" x-data="{ state: false }">
-            <div class="absolute inset-0 blur-xl h-[100%]
+            <div
+                class="absolute inset-0 blur-xl h-[100%]
             bg-gradient-to-r from-green-100 via-blue-100 to-blue-200
               ">
             </div>
@@ -76,18 +77,22 @@
                                         </p>
                                     </a>
                                     <h1 class="text-4xl text-gray-800 font-extrabold sm:text-5xl">
-                                      School Management System
+                                        School Management System
                                     </h1>
                                     <p class="text-xl text-blue-900 font-extrabold sm:text-xl">
                                         Efficient, Integrated, and User-Friendly Solutions for Indian Schools
-                                    </p>    
+                                    </p>
                                     <br>
-                                    
-                                    <p class="text-sm text-gray-900">The Savants’ School Management System is a comprehensive digital solution that helps schools across India streamline their operations, improve communication, and enhance the overall academic experience. With AI-powered tools and an easy-to-use interface, we aim to revolutionize school management for institutions of all sizes.</p>                              
-                                
+
+                                    <p class="text-sm text-gray-900">The Savants’ School Management System is a
+                                        comprehensive digital solution that helps schools across India streamline their
+                                        operations, improve communication, and enhance the overall academic experience.
+                                        With AI-powered tools and an easy-to-use interface, we aim to revolutionize
+                                        school management for institutions of all sizes.</p>
+
                                     <div class="flex items-center gap-x-3 sm:text-sm">
-                                        <a href="https://school.thesavants.in/"
-                                            class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-indigo-500 border-2 border-indigo-500 duration-150 hover:bg-green-100 hover:text-gray-800 active:bg-indigo-500 active:text-white rounded-full md:inline-flex">
+                                        <a href="#contactModal"
+                                            class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-indigo-500 border-2 border-indigo-500 duration-150 hover:bg-green-100 hover:text-gray-800 active:bg-indigo-500 active:text-white rounded-full md:inline-flex"onclick="toggleModal(true)">
                                             Request a Demo
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                 fill="currentColor" class="w-5 h-5">
@@ -118,7 +123,87 @@
             </div>
         </div>
 
+        {{-- <div id="contactModal2"
+            class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
+            <!-- Modal Content -->
+            <div class="bg-white w-full max-w-md p-6 rounded-lg shadow-lg space-y-4"> 
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-bold text-gray-800">Request Us For Demo</h2>
+                    <button onclick="toggleModal(false)" class="text-gray-400 hover:text-gray-600">
+                        ✕
+                    </button>
+                </div>
+                @if (Session::has('success'))
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var successMessage = '{{ Session::get('success') }}';
+                            if (successMessage) {
+                                alert(successMessage);
+                            }
+                        });
+                    </script>
+                @endif
+                <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
+                    @csrf
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="name" required
+                                class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" required
+                                class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="text" name="phone" required
+                                class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Organization</label>
+                            <input type="text" name="company" required
+                                class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" rows="3" required
+                            class="mt-1 w-full px-3 py-2 text-sm bg-gray-100 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <button id="submitBtn" type="submit"
+                        class="w-full py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex justify-center items-center">
+                        <span id="buttonText">Submit</span>
+                        <span id="loadingSpinner"
+                            class="hidden ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                    </button>
+                </form>
+            </div>
+        </div> --}}
+
+
+
         <script>
+            // function toggleModal(show) {
+            //     const modal = document.getElementById('contactModal2');
+            //     modal.classList.toggle('hidden', !show);
+            // }
+            // const form = document.getElementById('contactForm');
+            // const submitBtn = document.getElementById('submitBtn');
+            // const buttonText = document.getElementById('buttonText');
+            // const loadingSpinner = document.getElementById('loadingSpinner');
+
+            // form.addEventListener('submit', function(e) {
+            //     // Show spinner and disable button
+            //     submitBtn.disabled = true;
+            //     buttonText.textContent = 'Sending...';
+            //     loadingSpinner.classList.remove('hidden');
+            // });
+
+
             document.addEventListener("alpine:init", () => {
                 Alpine.data("dropdown", () => ({
                     open: false,
@@ -153,7 +238,8 @@
                     <!-- Left Section: Image and Quote -->
                     <div class="relative lg:mb-12">
                         <img class="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4"
-                            src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg" alt="" />
+                            src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/dots-pattern.svg"
+                            alt="" />
                         <div class="pl-12 pr-6">
                             <img class="relative rounded-lg shadow-lg"
                                 src="https://cdn.rareblocks.xyz/collection/celebration/images/content/3/girl-working-on-laptop.jpg"
@@ -165,62 +251,80 @@
                                     <div class="flex items-start">
                                         <p class="text-3xl sm:text-4xl">👋</p>
                                         <blockquote class="ml-5">
-                                            <p class="text-sm font-medium text-white sm:text-lg">“Our school management software manages everything starting from admission to attendance and exams to result cards & certification.”</p>
+                                            <p class="text-sm font-medium text-white sm:text-lg">“Our school management
+                                                software manages everything starting from admission to attendance and
+                                                exams to result cards & certification.”</p>
                                         </blockquote>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- Right Section: Title and Points -->
                     <div class="2xl:pl-16">
-                        <h2 class="text-2xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl lg:leading-tight">
+                        <h2
+                            class="text-2xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl lg:leading-tight">
                             Why Choose The Savants School Management System?
                         </h2>
-                        
-                        
+
+
                         <!-- Feature List -->
                         <ul class="mt-8 space-y-6 text-gray-800">
                             <li class="flex space-x-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-lg font-medium">End-to-End Automation: Manage everything from admissions to exam results in one platform.</span>
+                                <span class="text-lg font-medium">End-to-End Automation: Manage everything from
+                                    admissions to exam results in one platform.</span>
                             </li>
-            
+
                             <li class="flex space-x-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-lg font-medium">Customizable for Indian Education: Tailored solutions that understand CBSE, ICSE, and state board requirements.</span>
+                                <span class="text-lg font-medium">Customizable for Indian Education: Tailored solutions
+                                    that understand CBSE, ICSE, and state board requirements.</span>
                             </li>
-            
+
                             <li class="flex space-x-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-lg font-medium">Seamless Parent-Teacher Communication: Improve transparency and parent involvement through automated notifications and apps.</span>
+                                <span class="text-lg font-medium">Seamless Parent-Teacher Communication: Improve
+                                    transparency and parent involvement through automated notifications and apps.</span>
                             </li>
-            
+
                             <li class="flex space-x-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-lg font-medium">100% Data Security and Backup: Protect student and staff information with our advanced encryption and regular backups.</span>
+                                <span class="text-lg font-medium">100% Data Security and Backup: Protect student and
+                                    staff information with our advanced encryption and regular backups.</span>
                             </li>
-            
+
                             <li class="flex space-x-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.707-4.707a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-lg font-medium">Affordable Pricing: Plans that fit the needs and budget of Indian schools.</span>
+                                <span class="text-lg font-medium">Affordable Pricing: Plans that fit the needs and
+                                    budget of Indian schools.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
 
             @include('schoolcomponents.schoolfeature')
             @include('schoolcomponents.sidebar')

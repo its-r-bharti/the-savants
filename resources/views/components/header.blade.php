@@ -33,34 +33,6 @@
     <meta name="twitter:site" content="@YourTwitterHandle">
     <meta name="twitter:creator" content="@YourTwitterHandle">
 
-    <!-- Structured Data (Schema.org) for SEO -->
-    {{-- <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "{{ config('app.name', 'The Savants') }}",
-        "url": "{{ url()->current() }}",
-        "logo": "{{ asset('img/logo.png') }}",
-        "sameAs": [
-            "https://www.facebook.com/YourPage",
-            "https://twitter.com/YourTwitterHandle",
-            "https://www.linkedin.com/company/YourCompany"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-9056425289",
-            "contactType": "Customer Service"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Your Street Address",
-            "addressLocality": "Your City",
-            "addressRegion": "Your Region",
-            "postalCode": "824236",
-            "addressCountry": "India"
-        }
-    }
-    </script> --}}
 
     <!-- Additional Meta Tags for Outreach -->
     <meta name="theme-color" content="#4CAF50">

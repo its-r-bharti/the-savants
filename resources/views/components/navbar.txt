@@ -1,4 +1,4 @@
-<header  class="absolute inset-x-0 top-0 z-50 " >
+<header  class="absolute inset-x-0 top-0 z-50">
     <nav  class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
@@ -134,7 +134,46 @@
         </div>
         <!-- Display admin name or login button -->
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            {{-- @auth
+        <!-- When user is signed in, show their name -->
+        <div class="flex items-center space-x-3">
+            <x-dropdown align="right" width="48">
+                <x-slot name="trigger">
+                    <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                        <div>Hello, {{ Auth::user()->name }}</div>
+
+                        <div class="ms-1">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </button>
+                </x-slot>
+
+                <x-slot name="content">
+                    <x-dropdown-link :href="route('profile.edit')">
+                        {{ __('Profile') }}
+                    </x-dropdown-link>
+
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Log Out') }}
+                        </x-dropdown-link>
+                    </form>
+                </x-slot>
+            </x-dropdown>
             
+        </div>
+    @else
+        <!-- Show Log in button if user is not signed in -->
+        <a href="{{ route('login') }}" class="text-lg  font-semibold hover:text-red-600 leading-6 text-gray-900">Log in <span
+                aria-hidden="true">&rarr;</span></a>
+    @endauth --}}
             <div class="flex items-center space-x-4">
                 <!-- WhatsApp Button -->
                 <a href="https://wa.me/919056425289" target="_blank" class="flex items-center space-x-2">
@@ -157,7 +196,10 @@
 
         </div>
 
-      
+        {{-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+            aria-hidden="true">&rarr;</span></a>
+</div> --}}
 
     </nav>
 
@@ -224,7 +266,31 @@
 
 
                     <div class="py-6">
-                        
+                        {{-- @auth
+                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                {{ Auth::user()->name }}
+                            </a>
+                            <div class="mt-3 space-y-1">
+                                <x-responsive-nav-link :href="route('profile.edit')">
+                                    {{ __('Profile') }}
+                                </x-responsive-nav-link>
+                
+                                <!-- Authentication -->
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                
+                                    <x-responsive-nav-link :href="route('logout')"
+                                            onclick="event.preventDefault();
+                                                        this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-responsive-nav-link>
+                                </form>
+                            </div>
+                        @else
+                            <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                Log in
+                            </a>
+                        @endauth --}}
 
                         <a href="#contactModal"
                             class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 "
@@ -247,7 +313,6 @@
         </div>
     </div>
 </header>
-
 <!-- Modal Overlay -->
 <div id="contactModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden z-50">
     <!-- Modal Content -->
@@ -354,4 +419,34 @@
         });
     });
 </script>
+<script>
+    function isDarkColor(rgb) {
+        // Formula to calculate brightness
+        const brightness = (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
+        return brightness < 128; // lower = darker
+    }
 
+    function getComputedBackgroundColor(elem) {
+        let bg = window.getComputedStyle(elem).backgroundColor;
+        const result = bg.match(/\d+/g).map(Number);
+        return { r: result[0], g: result[1], b: result[2] };
+    }
+
+    function updateNavbarTextColor() {
+        const navbar = document.querySelector('#navbar'); // use your actual navbar id or class
+        const backgroundElem = document.body; // or the element behind your navbar
+        const bgColor = getComputedBackgroundColor(backgroundElem);
+        
+        if (isDarkColor(bgColor)) {
+            navbar.classList.remove('text-black');
+            navbar.classList.add('text-white');
+        } else {
+            navbar.classList.remove('text-white');
+            navbar.classList.add('text-black');
+        }
+    }
+
+    // Run on load and on resize (optional)
+    window.addEventListener('load', updateNavbarTextColor);
+    window.addEventListener('resize', updateNavbarTextColor);
+</script>

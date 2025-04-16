@@ -80,11 +80,11 @@
                             Service </a>
                     </li>
 
-                    {{-- <li>
-                        <a href="#" title=""
+                    <li>
+                        <a href="/training" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
-                            Works </a>
-                    </li> --}}
+                            Student Training </a>
+                    </li>
 
                     <li>
                         <a href="#" title=""
@@ -111,15 +111,21 @@
                     </li>
 
                     <li>
-                        <a href="#" title=""
+                        <a href="/term-condition" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
                             Terms & Conditions </a>
                     </li>
 
                     <li>
-                        <a href="#" title=""
+                        <a href="/privacy" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
                             Privacy Policy </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/return-refund" title=""
+                            class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                            Return and Refund Policy </a>
                     </li>
                 </ul>
             </div>

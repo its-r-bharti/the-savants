@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PricingPlanController;
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\InternshipController;
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -84,6 +85,32 @@ Route::get('/hardware', function () {
     return view('hardware.homepage');
 });
 
+
+//training
+Route::get('/training', function () {
+    return view('training.student');
+});
+Route::get('/payment', function () {
+    return view('training.payment');
+})->name('training.payment');
+
+
+
+//footer
+Route::get('/privacy', function () {
+    return view('home.privacy');
+});
+Route::get('/return-refund', function () {
+    return view('home.returnrefund');
+});
+Route::get('/term-condition', function () {
+    return view('home.termcondition');
+});
+
+
+Route::get('/internship/register', [InternshipController::class, 'showForm']);
+Route::post('/internship/register', [InternshipController::class, 'store']);
+Route::post('/internship/payment-success', [InternshipController::class, 'handlePayment'])->name('training.payment.success');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

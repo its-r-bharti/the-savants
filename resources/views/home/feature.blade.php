@@ -339,8 +339,19 @@
         
         
         @include('components.footer')
+        @if(session('success'))
+        <script>
+            Swal.fire({
+                title: 'Success!',
+                text: '{{ session('success') }}',
+                icon: 'success',
+                confirmButtonColor: '#64FFDA',
+                confirmButtonText: 'Okay'
+            });
+        </script>
+        @endif
     </div>
 
 
-
+   
 </html>
