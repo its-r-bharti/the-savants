@@ -11,7 +11,7 @@
 
              <!-- CLICKABLE IMAGE -->
              <a href="/training" class="block h-full w-auto z-20 relative">
-                 <img src="/img/training.png" alt="Internship Poster"
+                 <img src="/img/advertise.png" alt="Internship Poster"
                      class="h-full w-auto object-contain mx-auto cursor-pointer" />
              </a>
 
