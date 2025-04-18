@@ -47,7 +47,7 @@
                                             d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                                     </svg>
                                 </div>
-                                <p>Mohali, Punjab, India</p>
+                                <p>Mohali Sector 71, Punjab, India</p>
                             </li>
                             
                             <li class="flex items-center gap-x-3">
@@ -64,16 +64,16 @@
                     </div>
                     <!-- Google Map Embed -->
                     <div class="mt-6 border border-black rounded-md overflow-hidden">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.090063979931!2d76.72596637574325!3d30.70464768162561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910333b13a9e7a9%3A0xc32b917ff6d9491e!2sMohali%2C%20Punjab!5e0!3m2!1sen!2sin!4v1698084068661!5m2!1sen!2sin" 
-                            width="100%" 
-                            height="350" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.090063979931!2d76.72596637574325!3d30.70464768162561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910333b13a9e7a9%3A0xc32b917ff6d9491e!2sMohali%2C%20Punjab!5e0!3m2!1sen!2sin!4v1698084068661!5m2!1sen!2sin"
+                          width="100%"
+                          height="350"
+                          style="border:0;"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
+                      </div>
                 </div>
                 
                 <div class="flex-1 mt-12 sm:max-w-lg lg:max-w-md">

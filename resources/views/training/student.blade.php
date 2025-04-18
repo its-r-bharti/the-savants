@@ -328,7 +328,9 @@
       <div class="container mx-auto px-6 lg:px-20 text-center">
           <!-- Heading -->
           <div class="mb-12 max-w-4xl mx-auto">
-              <h2 class="text-3xl md:text-4xl font-bold text-[#64FFDA] mb-6">Student Internship Program</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-10">
+                Internship Program by <span class="text-[#64FFDA]">The Savants</span> × <span class="text-[#FFA500]">Bytelogs</span>
+              </h2>
               <p class="text-base md:text-lg text-gray-300">
                   Kickstart your professional journey with The Savants' industry-oriented internship programs. 
                   Choose your track, pick a duration, and gain the confidence and competence to thrive in your future career.

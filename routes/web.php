@@ -107,6 +107,10 @@ Route::get('/term-condition', function () {
     return view('home.termcondition');
 });
 
+Route::get('/Shipping and Delivery', function () {
+    return view('home.Shipping');
+});
+
 
 Route::get('/internship/register', [InternshipController::class, 'showForm']);
 Route::post('/internship/register', [InternshipController::class, 'store']);

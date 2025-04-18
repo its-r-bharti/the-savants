@@ -104,11 +104,7 @@
                             Customer Support </a>
                     </li>
 
-                    <li>
-                        <a href="#" title=""
-                            class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
-                            Delivery Details </a>
-                    </li>
+                    
 
                     <li>
                         <a href="/term-condition" title=""
@@ -126,6 +122,11 @@
                         <a href="/return-refund" title=""
                             class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
                             Return and Refund Policy </a>
+                    </li>
+                    <li>
+                        <a href="/Shipping and Delivery" title=""
+                            class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                            Shipping and Delivery </a>
                     </li>
                 </ul>
             </div>
