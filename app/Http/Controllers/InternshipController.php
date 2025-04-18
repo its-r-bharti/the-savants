@@ -22,6 +22,9 @@ class InternshipController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
+            'college_name' => 'required|string',
+            'roll_number' => 'required|string',
+            'address' => 'required|string',
             'field' => 'required',
             'duration' => 'required',
             'resume' => 'nullable|file|mimes:pdf'
@@ -39,8 +42,8 @@ class InternshipController extends Controller
         $registration = InternshipRegistration::create($data);
 
         $amounts = ['30' => 1000, '45' => 1500, '180' => 5000];
-        // $amount = $amounts[$data['duration']] * 100;
-        $amount = $amounts[$data['duration']] /10;
+        $amount = $amounts[$data['duration']] * 100;
+        // $amount = $amounts[$data['duration']] /10;
 
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
         $order = $api->order->create([

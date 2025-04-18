@@ -364,21 +364,35 @@
   
       
         
-          <section id="domains" class="bg-[#112240] py-16">
-            <div class="container mx-auto px-4">
-              <h3 class="text-3xl font-semibold text-center text-[#64FFDA] mb-10">Internship Domains</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-[#1C2E4A] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                  <h4 class="text-2xl font-bold text-[#64FFDA] mb-2">Web Full Stack Development</h4>
-                  <p class="text-gray-300">Work on both frontend and backend technologies. Learn HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and more. Collaborate on real-time projects to strengthen your portfolio.</p>
-                </div>
-                <div class="bg-[#1C2E4A] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                  <h4 class="text-2xl font-bold text-[#64FFDA] mb-2">Embedded Systems</h4>
-                  <p class="text-gray-300">Delve into embedded systems, circuit design, PCB prototyping, and IoT integration. This track offers deep technical insights and hands-on electronics projects tailored to industry standards.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+  <section id="domains" class="bg-[#112240] py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center text-[#64FFDA] mb-10">Internship Domains</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  
+        <!-- Web Full Stack Development -->
+        <div class="bg-[#1C2E4A] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h4 class="text-2xl font-bold text-[#64FFDA] mb-2">Web Full Stack Development</h4>
+          <p class="text-gray-300 mb-4">Work on both frontend and backend technologies. Learn HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and more. Collaborate on real-time projects to strengthen your portfolio.</p>
+          <a href="/brochures/web.pdf" download
+             class="inline-block bg-[#64FFDA] text-[#0A192F] px-4 py-2 rounded-lg font-semibold hover:bg-[#52ccb4] transition">
+            📄 Download Brochure
+          </a>
+        </div>
+  
+        <!-- Embedded Systems -->
+        <div class="bg-[#1C2E4A] p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h4 class="text-2xl font-bold text-[#64FFDA] mb-2">Embedded Systems</h4>
+          <p class="text-gray-300 mb-4">Delve into embedded systems, circuit design, PCB prototyping, and IoT integration. This track offers deep technical insights and hands-on electronics projects tailored to industry standards.</p>
+          <a href="/brochures/embedded-systems.pdf" download
+             class="inline-block bg-[#64FFDA] text-[#0A192F] px-4 py-2 rounded-lg font-semibold hover:bg-[#52ccb4] transition">
+            📄 Download Brochure
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
         
           <section id="durations" class="py-16">
             <div class="container mx-auto px-4 text-center">
@@ -444,14 +458,24 @@
                 <input name="email" type="email" placeholder="Email" required
                   class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]">
           
-                  <input name="phone" type="phone" placeholder="Enter your Phone Number" required
+                <input name="phone" type="tel" placeholder="Enter your Phone Number" required
                   class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]">
+          
+                <!-- New Fields -->
+                <input name="college_name" placeholder="College Name" required
+                  class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]">
+          
+                <input name="roll_number" placeholder="Roll Number" required
+                  class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]">
+          
+                <textarea name="address" placeholder="Address" rows="2" required
+                  class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]"></textarea>
           
                 <select name="field" required
                   class="w-full bg-[#0f172a] border border-gray-700 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#64FFDA]">
                   <option value="">Select Field</option>
-                  <option value="web">Web Full Stack Development - CSE </option>
-                  <option value="electronics">Embedded Systems- ECE</option>
+                  <option value="web">Web Full Stack Development</option>
+                  <option value="electronics">Embedded Systems</option>
                 </select>
           
                 <select name="duration" required
@@ -478,6 +502,7 @@
               </form>
             </div>
           </section>
+          
           
         @include('components.blog')
         @include('components.contact')

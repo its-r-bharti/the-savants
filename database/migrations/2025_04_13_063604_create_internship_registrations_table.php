@@ -10,21 +10,24 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up()
-{
-    Schema::create('internship_registrations', function (Blueprint $table) {
-        $table->id();
-        $table->string('name');
-        $table->string('email');
-        $table->string('phone');
-        $table->string('field');
-        $table->string('duration');
-        $table->string('resume')->nullable();
-        $table->text('message')->nullable();
-        $table->boolean('payment_status')->default(0);
-        $table->string('razorpay_payment_id')->nullable();
-        $table->timestamps();
-    });
-}
+    {
+        Schema::create('internship_registrations', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('field');
+            $table->string('duration');
+            $table->string('college_name');
+            $table->string('roll_number');
+            $table->text('address');
+            $table->string('resume')->nullable();
+            $table->text('message')->nullable();
+            $table->boolean('payment_status')->default(0);
+            $table->string('razorpay_payment_id')->nullable();
+            $table->timestamps();
+        });
+    }
 
     /**
      * Reverse the migrations.

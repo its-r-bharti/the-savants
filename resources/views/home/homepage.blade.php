@@ -21,7 +21,19 @@
         @include('components.contact')
         {{-- @include('components.team') --}}
         @include('components.footer')
+        @include('components.annocement')
     </div>
+ 
+
+
+
+          
+
+ 
+  
+  
+
+
 
 </body>
 

@@ -17,6 +17,8 @@
                     <p><strong>Name:</strong> {{ $registration->name }}</p>
                     <p><strong>Email:</strong> {{ $registration->email }}</p>
                     <p><strong>Phone:</strong> {{ $registration->phone }}</p>
+                    <p><strong>College Name:</strong> {{ $registration->college_name }}</p>
+                    <p><strong>Roll Number:</strong> {{ $registration->roll_number}}</p>
                     <p><strong>Field:</strong> {{ ucfirst($registration->field) }}</p>
                     <p><strong>Duration:</strong> 
                         @if($registration->duration == 30) 30 Days
