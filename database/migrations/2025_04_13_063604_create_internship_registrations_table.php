@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('resume')->nullable();
             $table->text('message')->nullable();
             $table->boolean('payment_status')->default(0);
+            // $table->integer('amount_paid')->nullable()->after('payment_status');
             $table->string('razorpay_payment_id')->nullable();
             $table->timestamps();
         });

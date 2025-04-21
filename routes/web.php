@@ -6,6 +6,9 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PricingPlanController;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\InternshipController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\StudentController;
+
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -116,9 +119,19 @@ Route::get('/internship/register', [InternshipController::class, 'showForm']);
 Route::post('/internship/register', [InternshipController::class, 'store']);
 Route::post('/internship/payment-success', [InternshipController::class, 'handlePayment'])->name('training.payment.success');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        // Redirects automatically based on user type
+    })->middleware('redirect.usertype')->name('dashboard');
+
+    Route::prefix('admin')->group(function () {
+        Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    });
+
+    Route::prefix('student')->group(function () {
+        Route::get('/dashboard', [StudentController::class, 'dashboard'])->name('student.dashboard');
+    });
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -144,3 +157,7 @@ Route::get('/clear-cache', function () {
     Artisan::call('route:clear');
     return response()->json(['message' => 'Caches cleared successfully!']);
 });
+
+//admin
+
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
