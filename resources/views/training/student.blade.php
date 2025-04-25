@@ -504,13 +504,15 @@
                             </ul>
                         </div>
                         <div class="mt-6 text-center">
-                            <p class="text-sm text-gray-400 mb-1">Price:</p>
+                            <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
-                                <span class="diagonal-strike text-sm mr-2">₹2000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹1000</span>
+                                <span class="diagonal-strike text-sm mr-2 text-gray-400">₹1000</span>
+                                <span class="text-[#64FFDA] font-semibold">₹1200</span>
                             </p>
-                            <p class="text-sm text-red-400 mt-4 font-medium">🎉 Offer valid till April 23, 2025</p>
+                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1000 offer has ended!</p>
+                            <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
+                        
                     </div>
         
                     <!-- 45 Days Plan -->
@@ -526,12 +528,13 @@
                             </ul>
                         </div>
                         <div class="mt-6 text-center">
-                            <p class="text-sm text-gray-400 mb-1">Price:</p>
+                            <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
-                                <span class="diagonal-strike text-sm mr-2">₹3000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹1500</span>
+                                <span class="diagonal-strike text-sm mr-2 text-gray-400">₹3000</span>
+                                <span class="text-[#64FFDA] font-semibold">₹1700</span>
                             </p>
-                            <p class="text-sm text-red-400 mt-4 font-medium">🎉 Offer valid till April 23, 2025</p>
+                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1500 offer has ended!</p>
+                            <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
                     </div>
         
@@ -548,13 +551,15 @@
                                 <li>Letter of Recommendation & Completion</li>
                             </ul>
                         </div>
+                        
                         <div class="mt-6 text-center">
-                            <p class="text-sm text-gray-400 mb-1">Price:</p>
+                            <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
-                                <span class="diagonal-strike text-sm mr-2">₹10000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹5000</span>
+                                <span class="diagonal-strike text-sm mr-2 text-gray-400">₹10000</span>
+                                <span class="text-[#64FFDA] font-semibold">₹5500</span>
                             </p>
-                            <p class="text-sm text-red-400 mt-4 font-medium">🎉 Offer valid till April 23, 2025</p>
+                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹5000 offer has ended!</p>
+                            <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
                     </div>
         

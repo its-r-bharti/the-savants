@@ -17,9 +17,9 @@ class AdminController extends Controller
         // 2. Calculate income (you'll need an amount_paid column or map durations)
         // Here’s an example using a fixed price map:
         $priceMap = [
-            '30'  => 1000,
-            '45'  => 1500,
-            '180' => 5000,
+            '30'  => 1200,
+            '45'  => 1700,
+            '180' => 5500,
         ];
         $totalIncome = InternshipRegistration::where('payment_status', 1)
             ->get()
