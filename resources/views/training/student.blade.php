@@ -506,10 +506,13 @@
                         <div class="mt-6 text-center">
                             <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
-                                <span class="diagonal-strike text-sm mr-2 text-gray-400">₹1000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹1200</span>
+                                <span class="diagonal-strike text-sm mr-2 text-gray-400">₹2000</span>
+                                <span class="text-[#64FFDA] font-semibold">₹1000</span>
+                                <span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-0.5 rounded-full">
+                                    50% OFF
+                                </span>
                             </p>
-                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1000 offer has ended!</p>
+                            {{-- <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1000 offer has ended!</p> --}}
                             <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
                         
@@ -531,9 +534,12 @@
                             <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
                                 <span class="diagonal-strike text-sm mr-2 text-gray-400">₹3000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹1700</span>
+                                <span class="text-[#64FFDA] font-semibold">₹1500</span>
+                                <span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-0.5 rounded-full">
+                                    50% OFF
+                                </span>
                             </p>
-                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1500 offer has ended!</p>
+                            {{-- <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹1500 offer has ended!</p> --}}
                             <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
                     </div>
@@ -556,9 +562,12 @@
                             <p class="text-sm text-gray-400 mb-1">Current Price:</p>
                             <p class="text-lg">
                                 <span class="diagonal-strike text-sm mr-2 text-gray-400">₹10000</span>
-                                <span class="text-[#64FFDA] font-semibold">₹5500</span>
+                                <span class="text-[#64FFDA] font-semibold">₹5000</span>
+                                <span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-0.5 rounded-full">
+                                    50% OFF
+                                </span>
                             </p>
-                            <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹5000 offer has ended!</p>
+                            {{-- <p class="text-sm text-red-400 mt-2 font-medium">⏳ The early bird ₹5000 offer has ended!</p> --}}
                             <p class="text-sm text-yellow-400 mt-1 font-medium">⚠️ Enroll before prices go up again!</p>
                         </div>
                     </div>

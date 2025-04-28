@@ -41,7 +41,7 @@ class InternshipController extends Controller
 
         $registration = InternshipRegistration::create($data);
 
-        $amounts = ['30' => 1200, '45' => 1700, '180' => 5500];
+        $amounts = ['30' => 1000, '45' => 1500, '180' => 5000];
         $amount = $amounts[$data['duration']] * 100;
         // $amount = $amounts[$data['duration']] /10;
 
